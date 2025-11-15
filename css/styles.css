@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #020617;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.cursor-light {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+.content {
+    position: relative;
+    max-width: 700px;
+    margin: 20vh auto;
+    padding: 2rem 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.circle-hand {
+    position: relative;
+    padding: 4px 6px;
+}
+
+.circle-hand::before {
+    content: "";
+    position: absolute;
+    inset: -6px -8px;
+    border: 2px solid #facc15;
+    border-radius: 50% 45% 55% 50%;
+    transform: rotate(-5deg);
+    pointer-events: none;
+}
+
+.nav-cards {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-cards-inner {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.nav-card {
+    display: block;
+    padding: 24px 20px;
+    border: 2px solid #2563eb; /* blue border */
+    border-radius: 12px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    transition: 0.15s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-3px);
+    border-color: #1d4ed8; /* darker blue on hover */
+}
+
+.nav-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-card p {
+    margin: 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .nav-cards-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .nav-cards-inner {
+        grid-template-columns: 1fr;
+    }
+}

@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 max-w-3xl mx-auto space-y-20">
-  
+<main class="p-6 md:p-10 max-w-6xl mx-auto space-y-20">
+    <header class="space-y-3">
+        <p class="text-sm uppercase tracking-wider text-gray-500">Projects</p>
+    </header>
 </main>
-
 <footer class="text-center text-xs text-gray-500 py-8">
-    © Paula Gal. <i>Keep building</i>
+    © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-</body>
-
+<script src="/assets/js/script.js"></script>
 <script>
     fetch("header.html")
         .then(response => response.text())
@@ -24,4 +27,5 @@
             document.getElementById("header-placeholder").innerHTML = html;
         });
 </script>
+</body>
 </html>

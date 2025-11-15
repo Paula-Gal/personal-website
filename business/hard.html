@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">The Hard Thing About Hard Things</h1>
+            <p class="text-lg text-gray-600 mt-1">by Ben Horowitz</p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="../assets/img/hard_b.webp"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <h2 class="text-xl font-semibold mb-3">My Thoughts After Reading</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                pretium cursus libero, quis tincidunt elit ultrices non. In hac habitasse
+                platea dictumst. Aenean condimentum, magna a feugiat pretium, justo nisl
+                auctor urna, et volutpat orci mi at augue.
+            </p>
+        </article>
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Best Ideas Extracted</h2>
+            <ul class="space-y-3">
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    <strong>Idea 1:</strong> Brief explanation of the key insight.
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    <strong>Idea 2:</strong> Brief explanation of another impactful idea.
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    <strong>Idea 3:</strong> Summarize the lesson or concept.
+                </li>
+            </ul>
+        </section>
+    </section>
+
+</main>
+
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/assets/js/script.js"></script>
+</body>
+<script>
+    fetch("/utils/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

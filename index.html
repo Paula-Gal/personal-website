@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/img/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
 <div id="header-placeholder"></div>
 <main class="p-6 max-w-3xl mx-auto space-y-20">
     <section id="hero" class="text-center mt-20">
-        <h2 class="text-3xl font-semibold mb-4">Hi there,</h2>
-        <p class="text-gray-600 mb-6">
-            Welcome to my digital space - a small glimpse into what I build, learn, and care about.
+        <h2 class="text-4xl font-semibold mb-4">Hi there.</h2>
+       <br>
+        <p class="text-xl text-gray-600 mb-6">
+            Welcome to my digital space, <br>a small glimpse into what I build, learn, and care about.
         </p>
+        <section class="nav-cards">
+            <div class="nav-cards-inner">
+                <a href="/pages/about.html" class="nav-card">
+                    <h2>About</h2>
+                </a>
+                <a href="/pages/projects.html" class="nav-card">
+                    <h2>Projects</h2>
+                </a>
+                <a href="/pages/buildr.html" class="nav-card">
+                    <h2>BuildrDiary</h2>
+                </a>
+                <a href="/pages/contact.html" class="nav-card">
+                    <h2>Contact</h2>
+                </a>
+            </div>
+        </section>
     </section>
-    <section id="quotes" class="relative bg-gray-50 py-20 overflow-hidde">
+    <section id="quotes" class="relative bg-gray-50 py-8 -mt-[150px] overflow-hidden">
         <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-xl font-semibold text-center text-gray-800 mb-8">Ideas that inspire me</h2>
+            <h2 class="text-xl font-semibold text-center text-gray-800 mb-8">A dose of inspiration</h2>
             <div id="quoteCarousel" class="relative overflow-hidden rounded-2xl border bg-white">
                 <div class="carousel-track relative">
                     <figure class="slide p-10 text-center text-gray-700 italic opacity-100 transition-opacity duration-500 ease-out">
@@ -113,20 +134,29 @@
                 <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"
                      alt="Email Logo" class="w-7 h-7">
             </a>
+
+            <a href="https://x.com/GalPaula1" target="_blank" class="hover:opacity-80 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg"
+                     alt="X Logo" class="w-7 h-7">
+            </a>
+
+            <a href="https://www.instagram.com/_paulagal/" target="_blank" class="hover:opacity-80 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                     alt="Instagram Logo" class="w-7 h-7">
+            </a>
         </div>
     </section>
 </main>
-
 <footer class="text-center text-xs text-gray-500 py-8">
-    © Paula Gal. <i>Keep building</i>
+    © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-</body>
-
+<script src="/assets/js/script.js"></script>
 <script>
-    fetch("header.html")
+    fetch("./pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
         });
 </script>
+</body>
 </html>
