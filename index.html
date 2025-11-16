@@ -21,16 +21,16 @@
         </p>
         <section class="nav-cards">
             <div class="nav-cards-inner">
-                <a href="/pages/about.html" class="nav-card">
+                <a href="pages/about.html" class="nav-card">
                     <h2>About</h2>
                 </a>
-                <a href="/pages/projects.html" class="nav-card">
+                <a href="pages/projects.html" class="nav-card">
                     <h2>Projects</h2>
                 </a>
-                <a href="/pages/buildr.html" class="nav-card">
+                <a href="pages/buildr.html" class="nav-card">
                     <h2>BuildrDiary</h2>
                 </a>
-                <a href="/pages/contact.html" class="nav-card">
+                <a href="pages/contact.html" class="nav-card">
                     <h2>Contact</h2>
                 </a>
             </div>
@@ -152,7 +152,7 @@
 </footer>
 <script src="/assets/js/script.js"></script>
 <script>
-    fetch("./pages/header.html")
+    fetch("pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;

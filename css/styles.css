@@ -69,7 +69,7 @@ body {
 .nav-card {
     display: block;
     padding: 24px 20px;
-    border: 2px solid #2563eb; /* blue border */
+    border: 2px solid #2563eb; 
     border-radius: 12px;
     background: white;
     color: #111;
@@ -79,7 +79,7 @@ body {
 
 .nav-card:hover {
     transform: translateY(-3px);
-    border-color: #1d4ed8; /* darker blue on hover */
+    border-color: #1d4ed8; 
 }
 
 .nav-card h2 {
@@ -105,4 +105,20 @@ body {
     .nav-cards-inner {
         grid-template-columns: 1fr;
     }
+}
+.back-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3f3f3;
+    border: 2px solid #007bff; 
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #f3f3f3;
+}
+.underline {
+    text-decoration: underline;
 }

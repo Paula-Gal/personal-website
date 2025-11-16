@@ -25,30 +25,79 @@
             </div>
         </header>
         <article class="mb-12">
-            <h2 class="text-xl font-semibold mb-3">My Thoughts After Reading</h2>
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>            
             <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                pretium cursus libero, quis tincidunt elit ultrices non. In hac habitasse
-                platea dictumst. Aenean condimentum, magna a feugiat pretium, justo nisl
-                auctor urna, et volutpat orci mi at augue.
+            Competing Against Luck is one of my favourites business books that feels like it explains something you’ve always sensed but never had the words for. 
+               The book is about understanding why people really buy things. Not why companies think they buy things, but the real job a product is hired to do.
+            This idea is called the Jobs to Be Done theory, and it changes how you look at customers, products, and innovation.  
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Customers "hire" products</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Customers “hire” a product to do a job in their lives.<br>
+
+                People don’t buy a drill because they want a drill. They want a hole.
+
+                They don’t buy a milkshake for taste, they buy it because it’s easy to drink in the car and keeps them full on the commute.
+
+                They don’t buy a new app for features, they buy it because it solves a specific frustration.
+
+                Once you understand the “job,” you can design better solutions. If you misunderstand the job, your innovation becomes guesswork, and most guesses fail.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Innovation fails without understanding the job</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Christensen argues that companies often innovate blindly. They copy competitors, chase trends, or add features no one asked for.
+
+                But without a clear job, innovation becomes luck.
+
+                When companies deeply understand the job, they can predict what customers want and win consistently, not by guessing, but by solving real problems. 
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">How to find the real job</h2>
+            <p class="text-gray-700 leading-relaxed">
+                The book gives simple questions companies can ask:<br><br>
+
+                What’s frustrating about the current options?<br>
+
+                When do people use your product, and why at that moment?<br>
+
+                What “progress” do customers want to make? <br>
+
+                What workarounds do customers create on their own? <br><br>
+
+                Real jobs often hide in the small details.
             </p>
         </article>
+        <br>
         <section>
-            <h2 class="text-xl font-semibold mb-4">Best Ideas Extracted</h2>
             <ul class="space-y-3">
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 1:</strong> Brief explanation of the key insight.
+                    📌 "New products succeed not because of the features and functionality they offer but because of the experiences they enable."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 2:</strong> Brief explanation of another impactful idea.
+                    📌 "If you can’t describe what you are doing as a process, then you don’t know what you are doing."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 3:</strong> Summarize the lesson or concept.
+                    📌 "Creating the right experiences and then integrating around them to solve a job, is critical for competitive advantage. That’s because while it may be easy for competitors to copy products, it’s difficult for them to copy experiences that are well integrated into your company’s processes."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "For innovators, understanding the job is to understand what consumers care most about in that moment of trying to make progress."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "Before a customer hires any new product, you have to understand what he’ll need to fire in order to hire yours. Companies don’t think about this enough. Something always needs to get fired."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "Innovation is less about producing something new and more about enabling something new and important for customers."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "It’s assumed that ‘user experience’ is all about a beautiful screen and making sure the buttons are in all the right places. But that has almost nothing to do with getting the experience of using the software right in the real world where clinicians use it. You can’t do design requirements in a conference room. You have to get out in the wild and live it."
                 </li>
             </ul>
         </section>
     </section>
-
+    <button class="back-btn" onclick="history.back()">Back</button>
 </main>
 
 <footer class="text-center text-xs text-gray-500 py-8">
@@ -57,7 +106,7 @@
 <script src="/assets/js/script.js"></script>
 </body>
 <script>
-    fetch("/utils/header.html")
+    fetch("../pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;

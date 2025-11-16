@@ -25,30 +25,63 @@
             </div>
         </header>
         <article class="mb-12">
-            <h2 class="text-xl font-semibold mb-3">My Thoughts After Reading</h2>
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>         
             <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                pretium cursus libero, quis tincidunt elit ultrices non. In hac habitasse
-                platea dictumst. Aenean condimentum, magna a feugiat pretium, justo nisl
-                auctor urna, et volutpat orci mi at augue.
+                Blue Ocean Strategy is one of those rare business books that changes the way you look at markets and ideas. Instead of fighting competitors head-on or trying to be “slightly better” than the business next door, the book invites you to think bigger: What if you created a market where there is no competition at all?
+
+                This is the core idea behind the “blue ocean.” It’s a market space that’s open, and free, unlike the crowded “red oceans” where companies fight endlessly over the same customers. 
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Red Oceans vs. Blue Oceans</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Red oceans are crowded markets where businesses fight over price, features, and customers until the water turns “red” from all the competition.
+
+                Blue oceans are uncontested spaces where you create new demand instead of stealing it from others.
+
+                A red ocean is the smartphone market today, lots of players, similar features, and constant battles.
+                A blue ocean would be something like what Cirque du Soleil did: they didn’t compete with traditional circuses or with Broadway. They created something completely new.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                Instead of competing on price or features, Blue Ocean Strategy focuses on something called value innovation. This means raising the value for customers while lowering costs at the same time.
+
+                It sounds impossible at first, but the book shows how many successful companies have done it.
+
+                For example, Cirque du Soleil cut out expensive circus elements like animals but added artistic performance, storytelling, and music. They removed what customers didn’t care about anymore and introduced something fresh that people loved, and were willing to pay more for.  
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                One of the strongest ideas in the book is that companies often obsess over competitors when they should obsess over customers. People don’t care about your “battle strategy.” They care about products and services that make their lives easier or better.
+
+                Blue Ocean Strategy reminds us that innovation isn’t about beating someone else, it’s about solving a problem in a fresh way.
+
+                When you stop thinking like a competitor and start thinking like a problem-solver, blue oceans become easier to find.
             </p>
         </article>
+        <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        <br>
         <section>
-            <h2 class="text-xl font-semibold mb-4">Best Ideas Extracted</h2>
             <ul class="space-y-3">
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 1:</strong> Brief explanation of the key insight.
+                    📌 "Focus on innovating at value, not positioning against competitors."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 2:</strong> Brief explanation of another impactful idea.
+                    📌 "Blue ocean strategy is not about being first to market. Rather it’s about being first to get it right by linking innovation to value."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 3:</strong> Summarize the lesson or concept.
+                    📌 "Unless the technology makes buyers’ lives dramatically simpler, more convenient, more productive, less risky, or more fun and fashionable, it will not attract the masses no matter how many awards it wins."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "Every blue ocean will eventually be imitated and turn red."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "The key here is not to pursue pricing against the competition within an industry but rather to pursue pricing against substitutes and alternatives across industries and non-industries."
                 </li>
             </ul>
         </section>
     </section>
-
+    <button class="back-btn" onclick="history.back()">Back</button>
 </main>
 
 <footer class="text-center text-xs text-gray-500 py-8">
@@ -57,7 +90,7 @@
 <script src="/assets/js/script.js"></script>
 </body>
 <script>
-    fetch("/utils/header.html")
+    fetch("../pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;

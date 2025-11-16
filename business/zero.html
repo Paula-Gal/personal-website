@@ -6,7 +6,7 @@
     <title>Paula Gal</title>
     <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -25,39 +25,91 @@
             </div>
         </header>
         <article class="mb-12">
-            <h2 class="text-xl font-semibold mb-3">My Thoughts After Reading</h2>
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
             <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                pretium cursus libero, quis tincidunt elit ultrices non. In hac habitasse
-                platea dictumst. Aenean condimentum, magna a feugiat pretium, justo nisl
-                auctor urna, et volutpat orci mi at augue.
+                Peter Thiel’s Zero to One feels like a conversation with someone who wants you to slow down, think
+                differently, and question everything you assume about startups and success. Instead of giving
+                checklist-style advice, Thiel pushes readers to look at the world with fresh eyes and ask: What can I
+                create that doesn’t already exist?
+
+                That’s the heart of the book, moving from zero to one, or from nothing to something new.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Why “Zero to One”</h2>
+            <p class="text-gray-700 leading-relaxed">Thiel explains that there are two kinds of progress. One is copying
+                what already works. That’s how we get more restaurants, more apps, more products that look and feel the
+                same. This kind of progress is easy to understand, and it keeps the world moving, but it doesn’t really
+                change it.
+
+                The other type is true innovation. It’s when someone invents something so new that the world becomes
+                different afterward. Think of the first computers, the first smartphones, or the first social networks.
+                These ideas didn’t come from improving what already existed, they came from someone seeing a possibility
+                that others missed.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                One of the most interesting ideas in the book is Thiel’s belief that the world still holds “secrets”,
+                important ideas or opportunities that most people don’t notice. He believes that great founders succeed
+                because they discover one of these secrets.
+
+                He encourages us to ask questions like:
+
+                What problem do people have that nobody is solving?
+
+                What do I believe that most people don’t?
+
+                These questions sound simple, but they push us to look for hidden opportunities. Many breakthrough
+                companies were built this way. They didn’t win because they were louder or faster, they won because they
+                saw something others ignored.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Startups are about people, not just ideas</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Thiel also talks about how great companies are built by tight, committed teams. The best startups feel
+                like groups of people who believe strongly in a shared mission, not just coworkers collecting a
+                paycheck. They trust each other, they know their roles, and they push toward the same goal.
+
+                He also believes that strong founders matter. Not because they’re perfect, but because they have a clear
+                vision and the courage to stick with it, even when others doubt them.
             </p>
         </article>
+        <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        <br>
         <section>
-            <h2 class="text-xl font-semibold mb-4">Best Ideas Extracted</h2>
             <ul class="space-y-3">
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 1:</strong> Brief explanation of the key insight.
+                    📌 "Brilliant thinking is rare, but courage is in even shorter supply than genius."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 2:</strong> Brief explanation of another impactful idea.
+                    📌 "The best projects are likely to be overlooked, not trumpeted by a crowd; the best problems to
+                    work on are often the ones nobody else even tries to solve."
                 </li>
                 <li class="p-3 bg-gray-50 border rounded-lg">
-                    <strong>Idea 3:</strong> Summarize the lesson or concept.
+                    📌 "Customers won’t care about any particular technology unless it solves a particular problem in a
+                    superior way. And if you can’t monopolize a unique solution for a small market, you’ll be stuck with
+                    vicious competition."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "Your company needs to sell more than its product. You must also sell your company to employees
+                    and investors."
+                </li>
+                <li class="p-3 bg-gray-50 border rounded-lg">
+                    📌 "Customers won’t care about any particular technology unless it solves a particular problem in a
+                    superior way."
                 </li>
             </ul>
         </section>
     </section>
-
+    <button class="back-btn" onclick="history.back()">Back</button>
 </main>
-
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
 <script src="/assets/js/script.js"></script>
 </body>
 <script>
-    fetch("/utils/header.html")
+    fetch("../pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
