@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -18,7 +18,7 @@
             <p class="text-lg text-gray-600 mt-1">by Peter Thiel</p>
             <div class="mt-6 flex justify-center">
                 <img
-                        src="../assets/img/zero_b.jpg"
+                        src="/src/assets/img/zero_b.jpg"
                         alt="Book cover"
                         class="w-48 h-auto rounded-xl shadow-lg"
                 />
@@ -33,7 +33,8 @@
                 checklist-style advice, Thiel pushes readers to look at the world with fresh eyes and ask: What can I
                 create that doesn’t already exist?
 
-                That’s the heart of the book: <i>moving from zero to one</i>, creating something entirely new rather than incrementally adding to what already exists.          
+                That’s the heart of the book: <i>moving from zero to one</i>, creating something entirely new rather
+                than incrementally adding to what already exists.
             </p>
             <br>
             <h2 class="text-xl font-semibold mb-3">Why “Zero to One”</h2>
@@ -106,10 +107,10 @@
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-<script src="../assets/js/script.js"></script>
+<script src="/src/js/script.js"></script>
 </body>
 <script>
-    fetch("../pages/header.html")
+    fetch("/src/pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;

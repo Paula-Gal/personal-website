@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
+    <link rel="icon" type="image/png" href="../assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -15,10 +15,10 @@
     <header class="space-y-3">
         <p class="text-sm uppercase tracking-wider text-gray-500">Blog</p>
         <h1 class="text-3xl md:text-4xl font-semibold leading-tight">Welcome to my diary.</h1>
-        <p class="text-base text-gray-700"><strong>BuildrDiary</strong> is my space where I save and write short
-            articles about interesting things I learn about technology and entrepreneurship. <br>A small part of what I'm exploring in my free time.
-        </p> 
-        
+        <p class="text-base text-gray-700"><strong>BuildrDiary</strong> is my space where I write short
+            notes on what I'm learning about technology, entrepreneurship and building products. <br>A small part of
+            what I explore in my free time.
+        </p>
     </header>
     <section id="tech" class="space-y-4 mt-20">
         <div class="flex items-baseline justify-between">
@@ -137,7 +137,7 @@
             <h2 id="biz-title" class="text-2xl md:text-2xl font-bold">Business</h2>
         </div>
         <p class="text-gray-600 max-w-xl">
-            Some of the books that inspired me and offered new perspectives <br>around entrepreneurship.
+            Some of the books that inspired me and offered new perspectives <br>around entrepreneurship. More to come.
         </p>
         <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
@@ -150,7 +150,7 @@
                     Peter Thiel <br>
                     Notes on startups, or how to build the future
                 </p>
-                <a href="../business/zero.html"
+                <a href="./business/zero.html"
                    class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
@@ -165,7 +165,8 @@
                     W. Chan Kim, Renée Mauborgne <br>
                     How to create uncontested market space and make the competition irrelevant
                 </p>
-                <a href="../business/blue.html" class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
+                <a href="./business/blue.html"
+                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
                 <h3 class="mt-2 font-semibold text-lg leading-snug">
@@ -177,7 +178,8 @@
                     Clayton M. Christensen <br>
                     The story of innovation and customer choice
                 </p>
-                <a href="../business/luck.html" class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
+                <a href="./business/luck.html"
+                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
                 <div class="flex items-center gap-2 text-xs text-gray-500">
@@ -191,7 +193,8 @@
                     Geoffrey A. Moore <br>
                     Marketing and selling high-tech products to mainstream customers
                 </p>
-                <a href="../business/chasm.html" class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
+                <a href="./business/chasm.html"
+                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
                 <h3 class="mt-2 font-semibold text-lg leading-snug">
@@ -202,7 +205,8 @@
                     Ben Horowitz <br>
                     Building a business when there are no easy answers
                 </p>
-                <a href="../business/hard.html" class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
+                <a href="./business/hard.html"
+                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="group border rounded-2xl p-5 hover:shadow-md transition">
                 <h3 class="mt-2 font-semibold text-lg leading-snug">
@@ -214,7 +218,8 @@
                     Eric Ries <br>
                     How constant innovation creates radically successful businesses
                 </p>
-                <a href="../business/lean.html" class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
+                <a href="./business/lean.html"
+                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
             </article>
             <article class="relative group border rounded-2xl p-5 hover:shadow-md transition">
                 <span class="absolute top-4 left-4 bg-gray-200 text-gray-700 text-[10px] font-medium px-1.5 py-0.5 rounded">
@@ -348,7 +353,7 @@
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-<script src="../assets/js/script.js"></script>
+<script src="../js/script.js"></script>
 <script>
     fetch("header.html")
         .then(response => response.text())

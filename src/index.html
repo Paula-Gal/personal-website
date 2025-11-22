@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
+    <link rel="icon" type="image/png" href="./assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/img/styles.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -15,7 +14,7 @@
 <main class="p-6 max-w-3xl mx-auto space-y-20">
     <section id="hero" class="text-center mt-20">
         <h2 class="text-3xl font-semibold mb-4">Hi there.</h2>
-       <br>
+        <br>
         <p class="text-xxl text-gray-600 mb-6">
             Welcome to my digital space, <br>a small glimpse into what I build, learn, and care about.
         </p>
@@ -42,11 +41,15 @@
             <div id="quoteCarousel" class="relative overflow-hidden rounded-2xl border bg-white">
                 <div class="carousel-track relative">
                     <figure class="slide p-10 text-center text-gray-700 italic opacity-100 transition-opacity duration-500 ease-out">
-                        <blockquote class="text-sm">“Only those who will risk going too far can possibly find out how far one can go.”</blockquote>
+                        <blockquote class="text-sm">“Only those who will risk going too far can possibly find out how
+                            far one can go.”
+                        </blockquote>
                         <figcaption class="not-italic text-sm text-gray-500 mt-3">— T.S. Eliot</figcaption>
                     </figure>
                     <figure class="slide p-10 text-center text-gray-700 italic opacity-0 absolute inset-0 transition-opacity duration-500 ease-out">
-                        <blockquote class="text-sm">“Don't ask yourself what the world needs. Ask yourself what makes you come alive, and go do that, because what the world needs is people who have come alive.”</blockquote>
+                        <blockquote class="text-sm">“Don't ask yourself what the world needs. Ask yourself what makes
+                            you come alive, and go do that, because what the world needs is people who have come alive.”
+                        </blockquote>
                         <figcaption class="not-italic text-sm text-gray-500 mt-3">— Howard Thurman</figcaption>
                     </figure>
                     <br>
@@ -54,18 +57,26 @@
                         <blockquote class="text-sm">“Tell me, what else should I have done?
                             Doesn't everything die at last, and too soon?
                             Tell me, what is it you plan to do
-                            with your one wild and precious life?”</blockquote>
+                            with your one wild and precious life?”
+                        </blockquote>
                         <figcaption class="not-italic text-sm text-gray-500 mt-3">— Mary Oliver</figcaption>
                     </figure>
                     <figure class="slide p-10 text-center text-gray-700 italic opacity-0 absolute inset-0 transition-opacity duration-500 ease-out">
-                        <blockquote class="text-sm">“To sustain and fuel motivation for a goal, we need to fall in love not only with a dream of our future self, but also with the process of becoming that person, including the hard, undistracted work of every day.”</blockquote>
+                        <blockquote class="text-sm">“To sustain and fuel motivation for a goal, we need to fall in love
+                            not only with a dream of our future self, but also with the process of becoming that person,
+                            including the hard, undistracted work of every day.”
+                        </blockquote>
                         <figcaption class="not-italic text-sm text-gray-500 mt-3">— Carolyn Gregoire</figcaption>
                     </figure>
                 </div>
                 <button id="prevBtn" aria-label="Previous"
-                        class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border bg-white/80 backdrop-blur px-3 py-1 text-sm hover:bg-white">‹</button>
+                        class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border bg-white/80 backdrop-blur px-3 py-1 text-sm hover:bg-white">
+                    ‹
+                </button>
                 <button id="nextBtn" aria-label="Next"
-                        class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border bg-white/80 backdrop-blur px-3 py-1 text-sm hover:bg-white">›</button>
+                        class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border bg-white/80 backdrop-blur px-3 py-1 text-sm hover:bg-white">
+                    ›
+                </button>
                 <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
                     <button class="dot h-2.5 w-2.5 rounded-full bg-gray-300" aria-label="Slide 1"></button>
                     <button class="dot h-2.5 w-2.5 rounded-full bg-gray-300" aria-label="Slide 2"></button>
@@ -93,20 +104,40 @@
                 dots.forEach((d, idx) => d.style.backgroundColor = idx === i ? '#111827' : '#D1D5DB'); // gray-900 vs gray-300
             }
 
-            function nextSlide() { show(i + 1); }
-            function prevSlide() { show(i - 1); }
-            function start() { if (!timer) timer = setInterval(() => !paused && nextSlide(), delay); }
-            function stop() { clearInterval(timer); timer = null; }
+            function nextSlide() {
+                show(i + 1);
+            }
 
-            next.addEventListener('click', () => { nextSlide(); });
-            prev.addEventListener('click', () => { prevSlide(); });
+            function prevSlide() {
+                show(i - 1);
+            }
+
+            function start() {
+                if (!timer) timer = setInterval(() => !paused && nextSlide(), delay);
+            }
+
+            function stop() {
+                clearInterval(timer);
+                timer = null;
+            }
+
+            next.addEventListener('click', () => {
+                nextSlide();
+            });
+            prev.addEventListener('click', () => {
+                prevSlide();
+            });
             dots.forEach((d, idx) => d.addEventListener('click', () => show(idx)));
 
-            root.addEventListener('mouseenter', () => { paused = true; });
-            root.addEventListener('mouseleave', () => { paused = false; });
+            root.addEventListener('mouseenter', () => {
+                paused = true;
+            });
+            root.addEventListener('mouseleave', () => {
+                paused = false;
+            });
 
             let x0 = null;
-            root.addEventListener('touchstart', e => x0 = e.touches[0].clientX, {passive:true});
+            root.addEventListener('touchstart', e => x0 = e.touches[0].clientX, {passive: true});
             root.addEventListener('touchend', e => {
                 if (x0 === null) return;
                 const dx = e.changedTouches[0].clientX - x0;
@@ -114,7 +145,8 @@
                 x0 = null;
             });
 
-            show(0); start();
+            show(0);
+            start();
             document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
         })();
     </script>
@@ -122,7 +154,8 @@
         <h3 class="text-2xl font-semibold mb-4 top-[-70px]">Let's Connect.</h3>
         <p class="text-gray-600 mb-4">Reach out for collaborations or opportunities.</p>
         <div class="flex justify-center gap-6 mt-4">
-            <a href="https://www.linkedin.com/in/paula-gal-561371204/" target="_blank" class="hover:opacity-80 transition">
+            <a href="https://www.linkedin.com/in/paula-gal-561371204/" target="_blank"
+               class="hover:opacity-80 transition">
                 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
                      alt="LinkedIn Logo" class="w-5 h-5">
             </a>
@@ -152,9 +185,9 @@
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-<script src="/assets/js/script.js"></script>
+<script src="./js/script.js"></script>
 <script>
-    fetch("pages/header.html")
+    fetch("./pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;

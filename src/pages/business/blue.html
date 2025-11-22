@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Blue Ocean Strategy</h1>
+            <p class="text-lg text-gray-600 mt-1">by W. Chan Kim, Renée Mauborgne</p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/blue_b.webp"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Blue Ocean Strategy is one of those business books that changes the way you look at markets and ideas.
+                Instead of fighting competitors head-on or trying to be “slightly better” than the business next door,
+                the book invites you to think bigger: What if you created a market where there is no competition at all?
+
+                This is the core idea behind the “blue ocean.” It’s a market space that’s open, and free, unlike the
+                crowded “red oceans” where companies fight endlessly over the same customers.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Red Oceans vs. Blue Oceans</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Red oceans are crowded markets where businesses fight over price, features, and customers until the
+                water turns “red” from all the competition.
+
+                Blue oceans are uncontested spaces where you create new demand instead of stealing it from others.
+
+                A red ocean is the smartphone market today, lots of players, similar features, and constant battles.
+                A blue ocean would be something like what Cirque du Soleil did, they didn’t compete with traditional
+                circuses or with Broadway. They created something completely new,
+                mixing artistry, narrative, and high-end production instead of relying on animals, cheap tickets, or
+                simple stunts.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                Instead of competing on price or features, Blue Ocean Strategy focuses on something called <i>value
+                innovation</i>. This means raising the value for customers while lowering costs at the same time.
+
+                It sounds impossible at first, but the book shows how many successful companies have done it.
+
+                For example, Cirque du Soleil cut out expensive circus elements like animals but added artistic
+                performance, storytelling, and music. They removed what customers didn’t care about anymore and
+                introduced something fresh that people loved, and were willing to pay more for.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                One of the strongest ideas in the book is that companies often obsess over competitors when they should
+                obsess over customers. People don’t care about your “battle strategy.” They care about products and
+                services that make their lives easier or better.
+
+                Blue Ocean Strategy reminds us that innovation isn’t about beating someone else, it’s about solving a
+                problem in a fresh way.
+
+                When you stop thinking like a competitor and start thinking like a problem-solver, blue oceans become
+                easier to find.
+            </p>
+        </article>
+        <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        <br>
+        <section>
+            <ul class="space-y-3">
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
+                    📌 "Focus on innovating at value, not positioning against competitors."
+                </li>
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
+                    📌 "Blue ocean strategy is not about being first to market. Rather it’s about being first to get it
+                    right by linking innovation to value."
+                </li>
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
+                    📌 "Unless the technology makes buyers’ lives dramatically simpler, more convenient, more productive,
+                    less risky, or more fun and fashionable, it will not attract the masses no matter how many awards it
+                    wins."
+                </li>
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
+                    📌 "Every blue ocean will eventually be imitated and turn red."
+                </li>
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
+                    📌 "The key here is not to pursue pricing against the competition within an industry but rather to
+                    pursue pricing against substitutes and alternatives across industries and non-industries."
+                </li>
+            </ul>
+        </section>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>
