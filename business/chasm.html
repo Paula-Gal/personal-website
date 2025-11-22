@@ -6,7 +6,7 @@
     <title>Paula Gal</title>
     <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -79,13 +79,13 @@
         <section>
             <h2 class="text-xl font-semibold mb-4">Saved quotes</h2>
             <ul class="space-y-3">
-                <li class="p-3 bg-gray-50 border rounded-lg">
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
                     📌 "Make something 10 people completely love, not something most people think is pretty good."
                 </li>
-                <li class="p-3 bg-gray-50 border rounded-lg">
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
                     📌 "When pragmatists buy, they care about the company they are buying from, the quality of the product they are buying, the infrastructure of supporting products and system interfaces, and the reliability of the service they are going to get. In other words, they are planning on living with this decision personally for a long time to come."
                 </li>
-                <li class="p-3 bg-gray-50 border rounded-lg">
+                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
                     📌 "Positioning is the single largest influence on the buying decision."
                 </li>
             </ul>
@@ -97,10 +97,10 @@
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-<script src="/assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
 <script>
-    fetch("/utils/header.html")
+    fetch("../pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
