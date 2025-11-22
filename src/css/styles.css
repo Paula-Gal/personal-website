@@ -10,12 +10,14 @@ body {
     font-family: Arial, sans-serif;
     color: white;
 }
+
 .cursor-light {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 0;
 }
+
 .content {
     position: relative;
     max-width: 700px;
@@ -69,7 +71,7 @@ body {
 .nav-card {
     display: block;
     padding: 24px 20px;
-    border: 2px solid #2563eb; 
+    border: 2px solid #2563eb;
     border-radius: 12px;
     background: white;
     color: #111;
@@ -79,7 +81,7 @@ body {
 
 .nav-card:hover {
     transform: translateY(-3px);
-    border-color: #1d4ed8; 
+    border-color: #1d4ed8;
 }
 
 .nav-card h2 {
@@ -105,11 +107,12 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 .back-btn {
     padding: 8px 18px;
     font-size: 12px;
     background-color: #f3f3f3;
-    border: 2px solid #007bff; 
+    border: 2px solid #007bff;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s ease;
@@ -118,6 +121,7 @@ body {
 .back-btn:hover {
     background-color: #f3f3f3;
 }
+
 .underline {
     text-decoration: underline;
 }
@@ -213,7 +217,7 @@ body {
 }
 
 .project-card.is-open .project-body {
-    max-height: 1000px; 
+    max-height: 1000px;
     opacity: 1;
 }
 
