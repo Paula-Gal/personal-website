@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">AI Agents</h1>
+            <p class="text-lg text-gray-600 mt-1">What are AI Agents and why do they matter?</p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/agent_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                AI agents are autonomous software systems designed to perform tasks, make decisions, and respond to information without constant human input. Instead of following a fixed script, they can observe their environment, reason about what they see, and take actions that move them toward a goal.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">How AI Agents work</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Most AI agents operate through a simple cycle:
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                <br>1. Perceive<br>
+
+                They gather information: text, data, sensor inputs, or API results.<br>
+
+                <br>2. Decide<br>
+
+                Using reasoning models or LLMs, they evaluate their goals and choose the next action.<br>
+
+                <br>3. Act<br>
+
+                They perform tasks such as sending messages, executing code, updating data, searching the web, or interacting with tools.<br>
+
+                <br>4. Adapt<br>
+
+                Some agents learn from outcomes, improving their decisions over time.<br><br>
+                This loop makes them more flexible and capable than traditional rule-based software.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Where AI Agents are used</h2>
+            <p class="text-gray-700 leading-relaxed">
+                AI agents are becoming common in:</p><br>
+            <ul>
+                <li class="text-gray-700 leading-relaxed">Customer support -> responding to questions automatically</li>
+                <li class="text-gray-700 leading-relaxed">Workflow automation –> running tasks, triggering tools, and managing operations</li>
+                <li class="text-gray-700 leading-relaxed">Research assistance –> finding information, summarizing sources, and tracking updates</li>
+                <li class="text-gray-700 leading-relaxed">Personal productivity –> scheduling, organizing data, writing, and planning</li>
+                <li class="text-gray-700 leading-relaxed">Software development –> coding, debugging, testing, and deploying autonomously</li>
+            </ul>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Why AI agents matter</h2>
+            <p class="text-gray-700 leading-relaxed">
+                AI agents are important because they:</p><br>
+            <ul>
+                <li class="text-gray-700 leading-relaxed">*Save significant time by automating repetitive digital work</li>
+                <li class="text-gray-700 leading-relaxed">*Increase efficiency for teams and individuals</li>
+                <li class="text-gray-700 leading-relaxed">*Operate continuously, even when humans are offline</li>
+                <li class="text-gray-700 leading-relaxed">*Enable new capabilities, such as autonomous workflows and self-running systems</li>
+            </ul>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Experiment</h2>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>
