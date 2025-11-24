@@ -292,3 +292,24 @@ body {
         padding-inline: 1rem;
     }
 }
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;       
+    gap: 12px;          
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-list li svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.social-list li svg:hover {
+    opacity: 1;
+}
