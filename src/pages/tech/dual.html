@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Dual-Use Tech</h1>
+            <p class="text-lg text-gray-600 mt-1">Innovations that empower the world
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/dual_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Technology has always carried dual potential, which is the power to uplift society and the possibility of being used in ways its creators maybe never intended. Today, as innovation accelerates, dual-use tech tools that can serve both civilian and defense purposes sits at the center of some of the most important conversations in global innovation.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                Dual-use technologies are everywhere. Artificial intelligence helps doctors detect diseases earlier, but the same algorithms can optimize cyberattacks. Drones deliver medical supplies to remote regions, yet they can also be repurposed for surveillance or conflict. Even everyday tools like GPS and the internet began as military technologies before transforming into global infrastructure.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                What makes dual-use tech so influential is its ability to scale impact across sectors. A breakthrough in robotics might streamline disaster response, manufacturing, and agriculture all at once. Advances in biotech can fuel new therapies while improving food production. And AI-driven analytics can empower both humanitarian aid and smart logistics systems.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                Despite the challenges, dual-use innovation remains one of the most exciting drivers of global progress.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">5 Hot Dual-Use startups</h2>
+            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://www.anduril.com" target="_blank" class="text-blue-600 hover:underline">
+                    Anduril Industries
+                </a> <br>
+                -> Autonomous defense systems (sensors, drones, AI command platforms)<br>
+                -> The same autonomy, sensor fusion, and security stack can be applied to border security, critical-infrastructure monitoring, and disaster response
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://www.shield.ai" target="_blank" class="text-blue-600 hover:underline">
+                    Shield AI
+                </a> <br>
+                -> AI “pilot” software (Hivemind) and autonomous aircraft/drones<br>
+                -> Tech that can be used for defense missions also works for commercial inspections, emergency response, and industrial robotics
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://www.saildrone.com" target="_blank" class="text-blue-600 hover:underline">
+                    Saildrone
+                </a> <br>
+                -> Autonomous, wind and solar powered ocean drones collecting climate, mapping, and maritime-security data<br>
+                -> Same vehicles support climate science, commercial shipping, and naval/maritime defense
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://www.hadrian.co" target="_blank" class="text-blue-600 hover:underline">
+                    Hadrian
+                </a> <br>
+                -> Autonomous factories manufacturing critical aerospace and defense components<br>
+                -> Serves both commercial space/aerospace and traditional defense; also modernizes broader advanced manufacturing
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Future trends to watch</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Dual-use technology is moving faster and several trends are beginning to shape the next wave of innovation. Autonomous systems are becoming more capable, blending real world sensing with advanced decision making. Space technologies are rapidly expanding as private companies take on roles once reserved for governments. AI copilots are emerging across manufacturing, logistics, and national security, helping humans work smarter. New breakthroughs in climate technology, robotics, and cyber resilience are also converging, creating powerful tools that can serve both civilian and protective missions.
+            </p>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

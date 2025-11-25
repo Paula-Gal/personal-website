@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Autonomous Tools</h1>
+            <p class="text-lg text-gray-600 mt-1">The rise of autonomous AI tools</p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/robot_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Autonomous AI tools are systems capable of performing complex tasks with minimal or no human intervention are rapidly reshaping how we build, operate, and scale technology. What began as simple automation scripts has evolved into intelligent agents that can plan, reason, and execute workflows across software stacks.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                For years, automation meant rigid, rule-based scripts. Today’s autonomous tools are different,
+                they combine machine learning, natural language understanding, and decision-making models to adapt in real time. Instead of waiting for instructions, they interpret goals and figure out how to achieve them.
+
+                <br>These systems can: <br>
+
+                -> break tasks into actionable steps <br>
+
+                -> choose and execute the right tools <br>
+
+                -> evaluate their own output <br>
+
+                -> and retry or optimize without user intervention <br>
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                Autonomous AI tools are already proving themselves across industries: <br>
+
+               <br> 1. Software Development -> AI agents debug, generate pull requests, and even run CI/CD pipelines <br>
+
+                2. Business Operations ->  Automated agents handle invoicing, lead enrichment, scheduling, and reporting <br>
+
+                3. Customer Service -> Multi-agent systems respond to tickets, route requests, and escalate issues intelligently <br>
+
+                4. Research and Data Analysis ->  Agents gather sources, summarize findings, and generate structured reports <br>
+            </p><br>
+            <h2 class="text-xl font-semibold mb-3">Silicon Valley leaders driving the autonomous AI revolution</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Silicon Valley remains the epicenter of innovation in autonomous AI tools, with major companies and emerging startups accelerating the shift toward fully agentic software.</p><br>
+            <h2 class="text-xl font-semibold mb-3">OpenAI</h2>
+            <p class="text-gray-700 leading-relaxed">
+                OpenAI has pushed the boundary with models capable of reasoning, planning, and executing tasks autonomously. New agentic frameworks allow AI to use external tools, browse the web, write and run code, and chain actions toward a goal.
+            </p><br>
+            <h2 class="text-xl font-semibold mb-3">Google DeepMind</h2>
+            <p class="text-gray-700 leading-relaxed">
+                DeepMind continues to lead research on long-term planning, reinforcement learning, and self-correcting AI systems. Their work influences how autonomous agents reason about decisions, simulate outcomes, and optimize tasks without step-by-step instructions.
+            </p><br>
+            <h2 class="text-xl font-semibold mb-3">Meta</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Meta is investing heavily in large-scale, open-source-friendly AI tools. Their research on multi-agent systems and complex simulations supports the development of autonomous agents that collaborate, negotiate, and coordinate tasks. Their infrastructure (like PyTorch) powers many agentic startups globally.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Anduril & Palantir</h2>
+            <p class="text-gray-700 leading-relaxed">
+                These companies apply autonomous AI to defense, logistics, and security. Their systems combine sensor fusion, automated decision-making, and AI-assisted operations, demonstrating how autonomous tools can adapt to dynamic, real-world scenarios. 
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">The new wave of autonomous agents</h2>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://www.adept.ai" target="_blank" class="text-blue-600 hover:underline">
+                    Adept</a> –> Action-oriented agents that perform tasks across software tools<br>
+                <a href="https://www.anthropic.com/" target="_blank" class="text-blue-600 hover:underline">
+                    Anthropic</a> –> Safety-focused models powering agent frameworks for enterprises<br>
+
+                Runway & ElevenLabs –> Creative AI agents for editing, producing, and generating media<br>
+                <a href="https://www.glean.com/" target="_blank" class="text-blue-600 hover:underline">
+                    Glean</a> –> Corporate knowledge agents that autonomously organize and retrieve information<br>
+
+                Automation startups (Rewind AI, Cognition Labs, Devin) —> Agents that write code, troubleshoot systems, or run tasks end-to-end<br>
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Autonomous AI tools are quickly shifting from helpers to independent problem-solvers. With major tech leaders driving innovation, these systems are reshaping how work gets done and paving the way for a more automated and intelligent future.
+            </p>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

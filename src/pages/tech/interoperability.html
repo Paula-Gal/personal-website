@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Interoperability in digital health</h1>
+            <p class="text-lg text-gray-600 mt-1">Why interoperability is the real bottleneck in digital health
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/inter_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                In the last decade, digital health has exploded with innovation: AI diagnostics, wearable sensors, telemedicine, patient apps, and automated workflows. Yet despite all this progress, the industry continues to hit the same wall, health systems still don’t talk to each other.
+
+                Interoperability, the ability for different health technologies to exchange and understand data, is supposed to be the backbone of modern care. Instead, it has become the biggest obstacle to scaling digital health solutions. A new app or platform might be brilliant on its own, but if it can’t connect to electronic health records (EHRs), pharmacies, labs, or other providers, its impact is limited from the start.            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                The problem isn’t just technical. Healthcare data lives in fragmented silos, stored in outdated systems built long before today’s interoperability standards even existed. Each hospital or vendor often has its own format, protocols, privacy rules, and incentives. The result is a patchwork ecosystem where data moves slowly, inconsistently, or not at all.
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                For clinicians, this means juggling multiple portals and chasing missing information. For patients, it means repeating tests, re-explaining medical history, and facing delays in care that shouldn’t happen in a digital era. And for health-tech innovators, the lack of interoperability becomes a barrier to adoption, no matter how advanced their solution is.
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Despite ongoing efforts like FHIR standards, open APIs, and government initiatives true interoperability remains elusive. The challenge isn’t creating more technology, it’s making the existing technologies work together seamlessly.
+
+                Until that happens, digital health will remain more fragmented than connected. The next big leap in healthcare won’t come from a new device or an AI breakthrough, it will come from finally solving how systems share data.
+            </p>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

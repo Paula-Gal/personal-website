@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Digital Twins</h1>
+            <p class="text-lg text-gray-600 mt-1">Simulating the real world
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/twin_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Digital twins are becoming one of the most transformative technologies in modern industry. At their core, they are virtual replicas of physical systems that mirror real-world behavior in real time. From machines and factories to supply chains and entire cities, digital twins allow organizations to observe, test, and optimize without ever touching the physical world.            
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+               <br> What makes digital twins so powerful is their ability to combine live sensor data with advanced simulation models. This creates a dynamic feedback loop where companies can predict failures before they happen, refine designs with zero downtime, and explore countless “what-if” scenarios safely and cost-effectively. Manufacturers use them to improve production efficiency, energy companies use them to monitor infrastructure, and healthcare teams use them to simulate patient outcomes.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Digital Twins in health</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Digital twins are becoming one of the most promising innovations in healthcare, enabling precise and personalized simulations of patients, medical devices, and clinical environments. A digital twin in health can represent anything from a single organ to an entire hospital system, continuously updated with real-time data from sensors, imaging, wearables, and electronic health records. This allows doctors to explore treatments virtually before applying them in the real world, helping predict outcomes, reduce risks, and tailor care to the individual patient. Beyond clinical care, digital twins are transforming hospital operations by modeling patient flow, staffing, and resource allocation. As healthcare becomes more data-driven, digital twins will play a critical role in improving diagnoses, accelerating research, and supporting safer, more efficient medical systems.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Living Heart project</h2>
+            <p class="text-gray-700 leading-relaxed">
+                One of the most successful and widely recognized examples of a medical digital twin is the  <a href="https://www.3ds.com/3dexperiencelab/portfolio/living-heart" target="_blank" class="text-blue-600 hover:underline">
+                Living Heart Project.
+            </a>Dassault Systèmes created a high-fidelity digital replica of the human heart that simulates electrical activity, blood flow, and tissue mechanics.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                The Living Heart Project is a relevant example of how digital twins can transform medicine by enabling levels of testing, personalization, and prediction that were previously impossible. Its detailed heart model gives researchers and clinicians a safe virtual environment to explore how drugs, implants, or surgical procedures will affect an individual patient before making real-world decisions. This reduces risk, accelerates innovation in medical devices, and supports more precise and personalized care. Most importantly, it demonstrates how digital twins can shorten development cycles, improve treatment outcomes, and ultimately pave the way toward fully personalized medicine.
+            </p>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

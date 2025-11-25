@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Monolith vs. Microservices</h1>
+            <p class="text-lg text-gray-600 mt-1">Choosing the right architecture for your system
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/mono_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                When you design a new product, “monolith or microservices?” is one of the first architectural questions you’ll hit. There’s no universal right answer, only a better fit for your team, stage, and problem.            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                A monolith is a single application that bundles all core features into one codebase and one deployable unit.
+                Everything lives together: API, business logic, background jobs, web UI, sometimes even admin tools.
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Why teams start here?
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Simple to reason about ->  one project, one deployment pipeline
+
+                <br>Easier for small teams -> everyone works in the same place
+
+                <br>Debugging is straightforward -> logs and behavior are centralized
+
+                <br>Good fit for early-stage products that change fast
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                The downside shows up as the system grows -> builds get slower and even small changes can require touching unrelated areas of the code.
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                What are microservices?
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Microservices split the system into many small, independent services. Each service owns a narrow set of responsibilities and communicates with others over the network (often via HTTP or messaging).
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Why teams move here?
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Independent deployment and scaling for each service
+
+                <br>Teams can work in parallel with fewer conflicts
+
+                <br>Failures can be isolated instead of taking down the whole system
+
+                <br>Technology flexibility -> different services can use different stacks
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                The tradeoff is operational complexity. You now manage many services, network calls, versioning, and data consistency across boundaries.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">How to choose for your system</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A good rule of thumb is to opt for a well-structured monolith until the pain of staying monolithic is greater than the cost of splitting apart.
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                Microservices start to make sense when:
+
+                <br>-> Different parts of the system scale very differently (for example, read-heavy public APIs vs. internal tools)
+
+                <br>-> Multiple teams need to ship independently without stepping on each other
+
+                <br>-> Release risk in a single deploy has become unmanageable despite refactoring
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">Modular monoliths and gradually extract services as boundaries solidify. The key question to keep asking is: Does this architecture make it easier or harder for my team to deliver reliable value quickly?
+            </p><br>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Technologies that excite me most</h1>
+            <p class="text-lg text-gray-600 mt-1">A look at the innovations shaping the future
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/hum_t.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Every era has its breakthrough technologies, those inflection points that fundamentally reshape how we live, work, and understand the world. Today, we’re standing in the middle of one of the most transformative periods in human history.
+
+                Below is a look at the technologies that excite me the most, those that are not just impressive but meaningful, with the potential to redefine entire industries, solve global problems, and unlock new kinds of human creativity.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Artificial Intelligence</h2>
+            <p class="text-gray-700 leading-relaxed">
+                AI is no longer a tool, it’s becoming a collaborator. Large language models, multimodal systems, and agentic AI are evolving from simple assistants into systems that can plan, reason, and act. These models can write code, design workflows, analyze scientific data, and even optimize business processes autonomously.
+
+                What excites me most is not just the intelligence itself, but the accessibility. For the first time, highly specialized expertise, legal analysis, programming, data interpretation can be amplified through AI, enabling individuals and small teams to do what previously required entire departments. The effects will be enormous, faster innovation cycles, new job categories, and a world where creativity and problem-solving are no longer limited by technical skill barriers.
+            </p><br>
+            <h2 class="text-xl font-semibold mb-3">Robotics</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Robotics is undergoing a renaissance driven by AI. Robots are shifting from rigid, pre-programmed machines into adaptive, intelligent systems that perceive their environment and learn from it. Whether it’s warehouse automation, surgical robotics, or next-generation humanoids, robots are becoming more capable.
+
+                Robots powered by language models can understand natural instructions, reason about objects, and perform tasks with minimal programming. This makes robots useful not just in industrial settings, but also in homes, hospitals, and small businesses. And as materials science and actuator technology advance, we’ll see robots that are more affordable, more dexterous, and more aligned with human movement. Robotics is no longer about replacing people but augmenting them, taking on dangerous, repetitive, or precision-based tasks that humans shouldn’t or can’t do alone.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Biotechnology</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Biotech is advancing faster than at any moment in human history. Gene editing tools like mRNA therapeutics, lab-grown organs, and AI-accelerated drug discovery are unlocking new paths in medicine and biology. Diseases that once felt untreatable are now within reach of cure, biological systems that seemed too complex to model can now be simulated and engineered.
+
+                What excites me most is the shift toward precision medicine. Instead of one-size-fits-all treatments, therapies can be tailored to individual genetics and physiology. Digital twins of human organs, AI-modeled proteins, and automated wet labs are dramatically reducing the time from discovery to clinical trial.
+
+                Biotech isn’t just improving healthcare, it’s redefining it. Aging, chronic disease, and personalized wellness will all look radically different within a decade.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Decentralized Infrastructure</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Decentralized technologies such as blockchains, smart contracts, and verifiable compute are laying the groundwork for a more transparent and trust-minimized digital economy. While the hype cycles around crypto have been noisy, the underlying infrastructure continues to mature.
+
+                What excites me is how decentralization enables trust without intermediaries. Ownership becomes programmable. Identity becomes portable. Networks become more resilient. Whether through decentralized science (DeSci), tokenized infrastructure, or trustless data validation, these systems can unlock new forms of collaboration. The future of digital ownership, finance, and governance will be shaped by these foundations.
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>

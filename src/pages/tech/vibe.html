@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Gal</title>
+    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+<main class="p-6 max-w-3xl mx-auto">
+    <section class="max-w-3xl mx-auto py-12">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold leading-tight">Vibe Coding</h1>
+            <p class="text-lg text-gray-600 mt-1">The Rise of no-code engineering
+            </p>
+            <div class="mt-6 flex justify-center">
+                <img
+                        src="/src/assets/img/low.png"
+                        alt="Book cover"
+                        class="w-48 h-auto rounded-xl shadow-lg"
+                />
+            </div>
+        </header>
+        <article class="mb-12">
+            <br>
+            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                For decades, software development was defined by complexity, syntax, frameworks, databases, deployment pipelines. But a shift is underway. A new generation of tools is making it possible to build software not through traditional programming, but through intuition, creativity, and interaction. This emerging movement is often called vibe coding, the idea that you can create by feeling your way through the problem instead of wrestling with code.   
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                No-code platforms used to be dismissed as oversimplified website builders. Today, they’re powerful engines capable of automating workflows, generating applications, connecting APIs, orchestrating data, and even deploying AI-driven systems. They let people sketch ideas visually, drag and drop logic, describe goals in natural language, or connect components like puzzle pieces. The result is engineering accessible to anyone with imagination, not just technical expertise.
+            </p><br>
+            <p class="text-gray-700 leading-relaxed">
+                But this movement isn’t replacing developers, it’s expanding what’s possible. Engineers use no-code tools to move faster, automate tedious tasks, and focus on deep technical problems while delegating the repetitive ones. Non-technical builders get the power to bring ideas to life without waiting for resources.
+            </p><br>
+            <h2 class="text-xl font-semibold mb-3">No-Code Tools</h2>
+            <p class="text-gray-700 leading-relaxed">
+                The rise of no-code engineering is being shaped by a new generation of platforms that let anyone design, automate, and launch digital products without writing a single line of code. Here are some of the leading tools defining this shift:
+            </p>
+            <br>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://bolt.new" target="_blank" class="text-blue-600 hover:underline">
+                    Bolt -> 
+                </a> is one of the fastest-growing no-code engineering tools, letting users generate full applications from simple prompts. It focuses on speed, iteration, and giving creators a smooth path from idea to working product.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://lovable.dev" target="_blank" class="text-blue-600 hover:underline">
+                    Lovable ->
+                </a> makes app-building approachable by combining no-code workflows with AI-assisted editing. Users can build, test, and refine products visually without touching traditional code.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://cursor.sh" target="_blank" class="text-blue-600 hover:underline">
+                    Cursor ->
+                </a>
+                 AI-assisted code editor that blends traditional development with powerful automation and code generation.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                <a href="https://replit.com" target="_blank" class="text-blue-600 hover:underline">
+                    Replit ->
+                </a>
+                cloud-based coding platform with AI agents, collaborative editing, and one-click deployment for rapid software creation.
+            </p>
+            <br>
+            <h2 class="text-xl font-semibold mb-3">Full comparison coming soon</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Up next, I’ll break down how Bolt, Lovable, Cursor, and Replit compare across usability, learning curve, deployment, pricing, and AI features. A full comparison is coming soon.
+            </p>
+        </article>
+    </section>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</main>
+<footer class="text-center text-xs text-gray-500 py-8">
+    © 2025 Paula Gal. <i>Keep building.</i>
+</footer>
+<script src="/src/js/script.js"></script>
+</body>
+<script>
+    fetch("/src/pages/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</html>
