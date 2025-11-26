@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/src/assets/img/pg-logo.png">
+    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-white text-gray-900 font-sans">
 <div class="cursor-light"></div>
@@ -19,7 +19,7 @@
             </p>
             <div class="mt-6 flex justify-center">
                 <img
-                        src="/src/assets/img/low.png"
+                        src="/assets/img/low.png"
                         alt="Book cover"
                         class="w-48 h-auto rounded-xl shadow-lg"
                 />
@@ -77,10 +77,10 @@
 <footer class="text-center text-xs text-gray-500 py-8">
     © 2025 Paula Gal. <i>Keep building.</i>
 </footer>
-<script src="/src/js/script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 <script>
-    fetch("/src/pages/header.html")
+    fetch("/pages/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
