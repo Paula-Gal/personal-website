@@ -83,8 +83,11 @@
     <button class="back-btn" onclick="history.back()">Back</button>
 </main>
 <footer class="text-center text-xs text-gray-500 py-8">
-    © 2025 Paula Gal. <i>Keep building.</i>
+    © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 <script src="/js/script.js"></script>
 </body>
 <script>
