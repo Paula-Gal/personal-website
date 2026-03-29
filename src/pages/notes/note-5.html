@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS isn't dead. But the version you know might be. — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">SaaS isn't dead. But the version you know might be.</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            Every few months someone declares SaaS dead. Usually it's someone selling the next thing.
+            But there's a real question underneath the hype, and it's worth sitting with.
+        </p>
+
+        <p>
+            The classic SaaS model: pay monthly, get a login, use the tool. It was built around one
+            assumption: software does the work faster, but humans still do the work. You pay for
+            Salesforce, but a human still updates the pipeline. You pay for Asana, but a human still
+            moves the cards. The tool organizes. The person executes.
+        </p>
+
+        <p>
+            AI agents break that assumption. If an agent can update your CRM, draft the follow-up
+            email, reschedule the meeting, and flag the at-risk deal, what exactly are you paying the
+            SaaS tool for? The interface? The database? Those aren't worth $50 per seat per month.
+        </p>
+
+        <p>
+            This is where it gets interesting. I don't think SaaS disappears. I think the pricing
+            does. Per-seat models make no sense when agents do the sitting. What replaces it is
+            probably outcome-based or usage-based: you pay when something gets done, not for the
+            right to do it yourself.
+        </p>
+
+        <p>
+            The other shift is that the moat moves. It used to be features and integrations. Now
+            it's data. The SaaS tools that survive will be the ones sitting on proprietary workflows
+            and context that agents need to function. Lose the data advantage, and you're a UI layer
+            that an agent can skip entirely.
+        </p>
+
+        <p>
+            So no, SaaS isn't dead. But if you're building a SaaS product today and your entire
+            value is "a nice dashboard humans interact with," I'd be nervous. The question isn't
+            whether your product works. It's whether it still needs a user.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

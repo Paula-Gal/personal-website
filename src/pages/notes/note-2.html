@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What AI agents actually change — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">What AI agents actually change</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            There's a lot of noise right now about AI agents. Most of it focuses on what they can do:
+            book flights, write code, answer emails. That's interesting, but it misses the bigger shift.
+        </p>
+
+        <p>
+            What agents actually change is the cost of coordination.
+        </p>
+
+        <p>
+            Think about how much of your day is spent not doing the work, but organizing it. Checking if
+            someone replied. Pulling data from one tool into another. Following up. Formatting. Scheduling.
+            These tasks aren't hard. They're just numerous, and they quietly eat hours.
+        </p>
+
+        <p>
+            Agents don't replace your judgment. They replace the glue work between your decisions.
+            You say "follow up with everyone who hasn't replied since Tuesday," and instead of scanning
+            threads, drafting individual messages, and tracking who you've reached, something just does it.
+            The thinking is still yours. The tedium isn't.
+        </p>
+
+        <p>
+            This matters more than people realize. When coordination is cheap, small teams can operate
+            like large ones. A founder can run processes that used to require an ops hire. A researcher
+            can explore ten directions instead of two. The bottleneck shifts from bandwidth to taste:
+            knowing what's worth doing becomes more valuable than being able to do a lot.
+        </p>
+
+        <p>
+            That said, most agents today still need babysitting. Reliability is the real challenge.
+            Retrieval, embeddings, and memory are harder than they look: agents often lose context
+            mid-task or pull the wrong information at the wrong time. And the less visible problems
+            are often the trickiest: orchestrating multi-step workflows, managing concurrency, and
+            keeping a human meaningfully in the loop without that oversight becoming its own bottleneck.
+            You end up verifying what they did, which starts to eat into the time they were supposed to save.
+        </p>
+
+        <p>
+            What I'm watching for isn't the perfect agent. It's the moment when imperfect agents are
+            still faster than doing it yourself. For some tasks, we're already there. For most, not yet.
+            But the direction is clear, and the compounding has already started.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

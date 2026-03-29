@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On being curious across domains — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">On being curious across domains</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            People keep asking me how I went from tech to blood donation. As if curiosity needs
+            a logical career path.
+        </p>
+
+        <p>
+            The honest answer is I didn't plan it. I read something about plasma supply chains,
+            found it bizarre that the richest countries in the world can't reliably keep blood on
+            shelves, and couldn't stop pulling the thread. That's it. No master plan. Just a
+            question I couldn't put down.
+        </p>
+
+        <p>
+            I think this is how the best work starts: not from expertise, but from noticing. You
+            see something that doesn't make sense, and you care enough to ask why. The domain is
+            almost irrelevant. The muscle is the same: look closely, ask basic questions, resist
+            accepting "that's just how it works" as an answer.
+        </p>
+
+        <p>
+            The founders I admire most are not the deepest specialists. They're the ones who
+            carried an idea from one field into another. Airbnb applied design thinking to
+            hospitality. Stripe brought developer experience to payments. The insight was never
+            purely technical. It was a borrowed lens.
+        </p>
+
+        <p>
+            Being a generalist gets a bad reputation. People assume it means you're shallow. But
+            there's a difference between knowing a little about everything and being able to connect
+            things that others don't. The second one requires going deep enough in multiple areas
+            to see the patterns between them.
+        </p>
+
+        <p>
+            Right now I'm reading about behavioral psychology, supply chain logistics, and community
+            design. None of those are "my field." All of them are shaping how I think about donor
+            retention. I wouldn't trade that cross-pollination for any amount of specialization.
+        </p>
+
+        <p>
+            Stay curious about things that aren't your job. Eventually, they become your edge.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The blood supply shouldn't depend on luck — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">The blood supply shouldn't depend on luck</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            Here's something that stopped me in my tracks: every two seconds, someone in the U.S. needs blood.
+            Yet fewer than 4% of eligible people donate. We're running one of the most critical supply chains
+            in healthcare on goodwill and hope, and it's not enough.
+        </p>
+
+        <p>
+            Blood supply looks like a logistics challenge from the outside. It isn't, or not only.
+            The real gap is in design, data, and how we treat the people who want to help.
+        </p>
+
+        <p>
+            I started digging into this space because I couldn't shake a simple question: why is it so hard
+            to keep blood on the shelves? The answer isn't that people don't care. It's that we've made it
+            surprisingly difficult to care consistently.
+        </p>
+
+        <p>
+            Most first-time donors never come back. Not because the experience was terrible, but because
+            nothing meaningful pulled them back in. Sometimes they heard something: a generic thank you,
+            a number on a website. But it was fragmented, impersonal, disconnected from their specific act
+            of giving. No one made it easy to book again. No one helped them feel like part of something
+            bigger than a single needle stick.
+        </p>
+
+        <p>
+            Meanwhile, hospitals cancel surgeries because the right blood type isn't available.
+            Plasma is even more critical: it's the raw material for life-saving therapies used daily
+            by patients with hemophilia, immune deficiencies, and rare diseases, and it's in chronic
+            shortage globally. The gap between what we need and what we collect is widening.
+        </p>
+
+        <p>
+            I believe the fix isn't just more marketing or more guilt. It's better design. Better feedback
+            loops. Better use of data to connect the right donor with the right need, at the right moment, for the right patient.
+            It's treating donors not as one-time volunteers but as a community worth investing in.
+        </p>
+
+        <p>
+            That's the problem I'm exploring now, and I think it's one worth solving. If you work in
+            this space or have donated blood and have thoughts on what would bring you back, I'd genuinely
+            love to hear from you.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

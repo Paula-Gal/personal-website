@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why most health tech fails at adoption, not technology — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">Why most health tech fails at adoption, not technology</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            I used to think the hard part of health tech was building something that works. It's not.
+            The hard part is getting anyone to use it.
+        </p>
+
+        <p>
+            The pattern is almost always the same. A team builds a genuinely good product — better
+            scheduling, smarter alerts, cleaner data. They demo it. Clinicians nod. The pilot goes well.
+            And then nothing happens. The contract stalls. The champion leaves. The hospital defaults
+            back to the old way.
+        </p>
+
+        <p>
+            This isn't a technology problem. It's a workflow problem. Hospitals are not broken systems
+            waiting for a fix. They're deeply optimized systems where every inefficiency exists for a
+            reason someone can explain. That workaround in the EHR? A nurse figured it out six years ago
+            and trained everyone else. That redundant paper form? It exists because the last software
+            migration lost data.
+        </p>
+
+        <p>
+            When you walk in with a product that requires people to change how they work, you're not
+            offering an upgrade. You're asking them to take a risk — with patient safety, with their
+            time, with their already-stretched team. And for most health tech companies, the pitch is
+            "trust us, it's better." That's not enough.
+        </p>
+
+        <p>
+            The founders I see winning in this space don't lead with features. They lead with
+            integration. They ask: how do I fit into what already happens, with zero disruption on
+            day one? They earn the right to change workflows later by first proving they won't break
+            anything now.
+        </p>
+
+        <p>
+            The technology is rarely what kills health tech startups. It's the assumption that a
+            better tool automatically earns adoption. It doesn't. Adoption is earned one workflow at a time.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

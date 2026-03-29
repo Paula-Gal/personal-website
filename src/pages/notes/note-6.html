@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little bets as a way of working — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">Little bets as a way of working</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            I used to think building something meant having a plan. A roadmap. A clear destination
+            you march toward. That sounds right until you actually start, and realize most of your
+            assumptions were wrong by week three.
+        </p>
+
+        <p>
+            What actually works, at least for me, is little bets. Small, cheap experiments designed
+            to teach you something, not prove you're right.
+        </p>
+
+        <p>
+            Write a landing page before you write code. Talk to ten people before you talk to
+            investors. Run a weekend pilot before you commit six months. Each one costs almost
+            nothing and tells you something you couldn't have learned by thinking harder.
+        </p>
+
+        <p>
+            This isn't a new idea. Peter Sims wrote a whole book about it. Pixar works this way.
+            Stand-up comedians work this way: testing jokes in small rooms before they headline.
+            But founders resist it because it feels slow. It feels like you're not making progress.
+            You want to build the thing, not run another experiment.
+        </p>
+
+        <p>
+            Here's what I've learned: the founders who move fastest aren't the ones who build
+            fastest. They're the ones who learn fastest. And learning happens through contact with
+            reality, not through pitch decks and strategy docs.
+        </p>
+
+        <p>
+            In my own work exploring the blood donation space, every week is a little bet. A
+            conversation with a blood bank director. A rough prototype shown to a donor. A blog
+            post to see what resonates. None of these are the product. All of them are making
+            the product better before it exists.
+        </p>
+
+        <p>
+            The cost of a little bet is a few hours. The cost of skipping them is building
+            something nobody wants. I know which risk I prefer.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

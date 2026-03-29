@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The physical AI platform model — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">The physical AI platform model</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            Everyone is building AI for screens. Chat interfaces, dashboards, copilots embedded
+            in software. But I keep thinking about what happens when AI meets the physical world:
+            not robots in a warehouse, but platforms that coordinate real things moving between
+            real people.
+        </p>
+
+        <p>
+            Blood donation is one of these. You have a perishable biological product with a
+            42-day shelf life. You have unpredictable supply driven by human willingness. You
+            have demand that spikes without warning: a car accident, a surgery, a natural disaster.
+            And you have a logistics chain that still relies heavily on phone calls, spreadsheets,
+            and gut instinct.
+        </p>
+
+        <p>
+            This is where AI gets interesting to me. Not as a chatbot that answers donor questions,
+            but as the coordination layer underneath. Predicting which blood types will be short
+            next Tuesday. Matching that forecast to donors nearby who are eligible and likely to
+            respond. Routing collection to the locations where it has the most impact. Adjusting
+            in real time when a hospital's needs change.
+        </p>
+
+        <p>
+            I think of this as the physical AI platform model: AI that doesn't replace a person
+            or a screen, but orchestrates a system that exists in the real world. The same pattern
+            applies to food banks, organ matching, disaster response, even local energy grids.
+            Anywhere supply is human, demand is urgent, and the thing being moved has an expiration date.
+        </p>
+
+        <p>
+            The software-only AI companies will get funded first. They always do. But the ones
+            that figure out how to coordinate atoms, not just bits, will build something much
+            harder to replicate.
+        </p>
+
+        <p>
+            The moat isn't the model. It's the mess. And the mess is where the real problems live.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>

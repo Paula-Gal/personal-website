@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 things I changed my mind about last year — Paula Gal</title>
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="cursor-light"></div>
+<div id="header-placeholder"></div>
+
+<main class="site-main">
+
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+
+    <section class="article-intro">
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name">5 things I changed my mind about last year</h1>
+    </section>
+
+    <article class="article-body">
+
+        <p>
+            I used to think changing your mind was a sign you didn't know what you were doing.
+            Now I think it's the only proof that you're actually paying attention. Here are five
+            things I see differently than I did twelve months ago.
+        </p>
+
+        <h2>1. Do not aim for perfection.</h2>
+        <p>
+            I wasted so much time polishing things that didn't need to be polished. The landing
+            page that no one was visiting. The pitch deck no one had asked for. Perfection is a
+            hiding place. It lets you feel productive while avoiding the thing that actually
+            matters: putting something imperfect into the world and seeing what happens. Done and
+            out there beats perfect and in your head. Every time.
+        </p>
+
+        <h2>2. To be comfortable with uncertainty.</h2>
+        <p>
+            I spent years believing that confidence meant having answers. Now I think real
+            confidence is being okay without them. When I started exploring the blood donation
+            space, I had no roadmap, no contacts, no industry background. Just questions. That
+            used to paralyze me. Now it feels like the most honest place to build from. You don't
+            need clarity to move. You just need curiosity and the willingness to look stupid for
+            a while.
+        </p>
+
+        <h2>3. Neurodivergent.</h2>
+        <p>
+            This one is personal. I spent a long time thinking my brain worked wrong: the
+            hyperfocus, the restlessness, the way I jump between ideas that seem unrelated to
+            everyone else. Last year I stopped seeing that as something to manage and started
+            seeing it as how I think best. The connections I make between supply chain logistics
+            and behavioral psychology, between game design and donor retention — that's not a bug.
+            The moment I stopped apologizing for how my mind works was the moment my work got
+            better.
+        </p>
+
+        <h2>4. The power of trying not to succeed but to gain insights and growth.</h2>
+        <p>
+            I used to measure everything by outcomes. Did it work? Did it convert? Did it close?
+            Last year I ran experiments that "failed" by every traditional metric: a pilot nobody
+            signed up for, a blog post nobody read, a partnership that went nowhere. But each one
+            taught me something I couldn't have learned by thinking. The pilot showed me what
+            donors actually care about. The blog post sharpened an argument I later used in a
+            conversation that did matter. When you stop keeping score and start keeping notes, you
+            move faster than the people chasing wins.
+        </p>
+
+        <h2>5. The people around you shape more than you think.</h2>
+        <p>
+            This was the quiet revelation. I used to believe building something was mostly about
+            discipline and ideas. What I didn't see was how much my energy, my ambition, even my
+            sense of what's possible was being set by the people I spent time with. Last year I
+            deliberately changed that. Fewer people who talk about what they're going to do. More
+            people who are actually doing it. Fewer comfortable conversations. More honest ones.
+            The shift wasn't dramatic from the outside. But inside, everything changed. You don't
+            rise to the level of your goals. You settle to the level of your circle.
+        </p>
+
+        <p>
+            That's the list. Not advice. Just five places where the old version of me was wrong
+            and the current version is a little less so. Ask me again next year: I'm sure at least
+            two of these will have shifted again. That's the whole point.
+        </p>
+
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Paula. <i>Keep building.</i>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="../../js/script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+        });
+</script>
+</body>
+</html>
