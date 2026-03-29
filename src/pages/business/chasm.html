@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
 <div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 max-w-3xl mx-auto">
-    <section class="max-w-3xl mx-auto py-12">
-        <header class="mb-10">
-            <h1 class="text-3xl font-bold leading-tight">Crossing the Chasm</h1>
-            <p class="text-lg text-gray-600 mt-1">by Geoffrey A. Moore</p>
-            <div class="mt-6 flex justify-center">
-                <img
-                        src="/assets/img/chasm_b.jpg"
-                        alt="Book cover"
-                        class="w-48 h-auto rounded-xl shadow-lg"
-                />
-            </div>
-        </header>
-        <article class="mb-12">
+<main class="site-main">
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+    
+        <section class="article-intro"><p class="section-label">Notes</p>
+            <h1 class="hero-name">Crossing the Chasm</h1>
+            <p>by Geoffrey A. Moore</p>
+        <img src="/assets/img/chasm_b.jpg" alt="Book cover" />
+        </section>
+        <article class="article-body">
             <br>
-            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Brief highlights</h2>
+            <p>
                 Crossing the Chasm is a book about one of the biggest challenges every new technology faces: moving from
                 a small group of early enthusiasts to the large, mainstream market. Geoffrey Moore explains why so many
                 great products get early buzz but fail to reach mass adoption. His answer is simple: there’s a “chasm”
@@ -36,8 +30,8 @@
                 This book is all about understanding that gap, and how to get over it.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">The technology adoption curve</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>The technology adoption curve</h2>
+            <p>
                 Moore breaks customers into five groups:<br><br>
 
                 Innovators – the tech lovers who try everything first<br>
@@ -59,8 +53,8 @@
                 The “chasm” lies between early adopters and the early majority. This is where most products fall.<br>
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Moore’s strategy</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Moore’s strategy</h2>
+            <p>
                 Moore says the key to crossing the chasm is to focus on a single niche market first, not try to sell to
                 everyone.
 
@@ -76,8 +70,8 @@
                 <br>The mainstream market doesn’t want half-finished tools. They want a complete solution.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Tell people exactly what problem you solve</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Tell people exactly what problem you solve</h2>
+            <p>
                 Moore says your messaging has to be ultra-clear when selling to the mainstream. You should be able to
                 complete this statement:
 
@@ -86,33 +80,30 @@
                 new ideas.
             </p>
         </article>
-        <section>
+        
             <h2 class="text-xl font-semibold mb-4">Saved quotes</h2>
-            <ul class="space-y-3">
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Make something 10 people completely love, not something most people think is pretty good."
+            <div class="article-quotes">
+                <li class="article-quote">
+                    "Make something 10 people completely love, not something most people think is pretty good."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "When pragmatists buy, they care about the company they are buying from, the quality of the
+                <li class="article-quote">
+                    "When pragmatists buy, they care about the company they are buying from, the quality of the
                     product they are buying, the infrastructure of supporting products and system interfaces, and the
                     reliability of the service they are going to get. In other words, they are planning on living with
                     this decision personally for a long time to come."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Positioning is the single largest influence on the buying decision."
+                <li class="article-quote">
+                    "Positioning is the single largest influence on the buying decision."
                 </li>
-            </ul>
-        </section>
-    </section>
-    <button class="back-btn" onclick="history.back()">Back</button>
-</main>
-<footer class="text-center text-xs text-gray-500 py-8">
+            </div>
+    </main>
+<footer class="site-footer">
     © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script src="/js/script.js"></script>
+<script src="../../js/script.js"></script>
 </body>
 <script>
     fetch("/pages/header.html")

@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
 <div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 max-w-3xl mx-auto">
-    <section class="max-w-3xl mx-auto py-12">
-        <header class="mb-10">
-            <h1 class="text-3xl font-bold leading-tight">Blue Ocean Strategy</h1>
-            <p class="text-lg text-gray-600 mt-1">by W. Chan Kim, Renée Mauborgne</p>
-            <div class="mt-6 flex justify-center">
-                <img
-                        src="/assets/img/blue_b.webp"
-                        alt="Book cover"
-                        class="w-48 h-auto rounded-xl shadow-lg"
-                />
-            </div>
-        </header>
-        <article class="mb-12">
+<main class="site-main">
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+    
+        <section class="article-intro"><p class="section-label">Notes</p>
+            <h1 class="hero-name">Blue Ocean Strategy</h1>
+            <p>by W. Chan Kim, Renée Mauborgne</p>
+        <img src="/assets/img/blue_b.webp" alt="Book cover" />
+        </section>
+        <article class="article-body">
             <br>
-            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Brief highlights</h2>
+            <p>
                 Blue Ocean Strategy is one of those business books that changes the way you look at markets and ideas.
                 Instead of fighting competitors head-on or trying to be “slightly better” than the business next door,
                 the book invites you to think bigger: What if you created a market where there is no competition at all?
@@ -36,8 +30,8 @@
                 crowded “red oceans” where companies fight endlessly over the same customers.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Red Oceans vs. Blue Oceans</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Red Oceans vs. Blue Oceans</h2>
+            <p>
                 Red oceans are crowded markets where businesses fight over price, features, and customers until the
                 water turns “red” from all the competition.
 
@@ -50,7 +44,7 @@
                 simple stunts.
             </p>
             <br>
-            <p class="text-gray-700 leading-relaxed">
+            <p>
                 Instead of competing on price or features, Blue Ocean Strategy focuses on something called <i>value
                 innovation</i>. This means raising the value for customers while lowering costs at the same time.
 
@@ -61,7 +55,7 @@
                 introduced something fresh that people loved, and were willing to pay more for.
             </p>
             <br>
-            <p class="text-gray-700 leading-relaxed">
+            <p>
                 One of the strongest ideas in the book is that companies often obsess over competitors when they should
                 obsess over customers. People don’t care about your “battle strategy.” They care about products and
                 services that make their lives easier or better.
@@ -73,41 +67,38 @@
                 easier to find.
             </p>
         </article>
-        <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        <h2>Saved quotes</h2>
         <br>
-        <section>
-            <ul class="space-y-3">
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Focus on innovating at value, not positioning against competitors."
+        
+            <div class="article-quotes">
+                <li class="article-quote">
+                    "Focus on innovating at value, not positioning against competitors."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Blue ocean strategy is not about being first to market. Rather it’s about being first to get it
+                <li class="article-quote">
+                    "Blue ocean strategy is not about being first to market. Rather it’s about being first to get it
                     right by linking innovation to value."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Unless the technology makes buyers’ lives dramatically simpler, more convenient, more productive,
+                <li class="article-quote">
+                    "Unless the technology makes buyers’ lives dramatically simpler, more convenient, more productive,
                     less risky, or more fun and fashionable, it will not attract the masses no matter how many awards it
                     wins."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Every blue ocean will eventually be imitated and turn red."
+                <li class="article-quote">
+                    "Every blue ocean will eventually be imitated and turn red."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "The key here is not to pursue pricing against the competition within an industry but rather to
+                <li class="article-quote">
+                    "The key here is not to pursue pricing against the competition within an industry but rather to
                     pursue pricing against substitutes and alternatives across industries and non-industries."
                 </li>
-            </ul>
-        </section>
-    </section>
-    <button class="back-btn" onclick="history.back()">Back</button>
-</main>
-<footer class="text-center text-xs text-gray-500 py-8">
+            </div>
+    </main>
+<footer class="site-footer">
     © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script src="/js/script.js"></script>
+<script src="../../js/script.js"></script>
 </body>
 <script>
     fetch("/pages/header.html")

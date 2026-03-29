@@ -3,355 +3,556 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paula Gal</title>
+    <title>Paula Gal — Writing</title>
     <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
 <div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 md:p-10 max-w-6xl mx-auto space-y-8">
-    <header class="space-y-3">
-        <p class="text-sm uppercase tracking-wider text-gray-500">Blog</p>
-        <h1 class="text-3xl md:text-4xl font-semibold leading-tight">Welcome to my diary.</h1>
-        <p class="text-base text-gray-700"><strong>BuildrDiary</strong> is my space where I write short
-            notes on what I'm learning about technology, entrepreneurship and building products. <br>A small part of
-            what I explore in my free time. More to come.
+
+<main class="site-main" style="max-width: 780px;">
+
+    <header>
+        <p class="section-label">Notes</p>
+        <h1 class="hero-name" style="margin-top: 0.75rem;">Notes</h1>
+        <p class="hero-body" style="margin-top: 0.75rem;">
+            Stuff I find interesting, half thinking out loud.
         </p>
     </header>
-    <section id="tech" class="space-y-4 mt-20">
-        <div class="flex items-baseline justify-between">
-            <h2 id="tech-title" class="text-2xl md:text-2xl font-bold">Tech</h2>
-        </div>
-        <p class="text-gray-600 max-w-xl">
-            Short takes on tech today.
-        </p>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>AI Agents</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    What are AI Agents and why do they matter?
-                </p>
-                <a href="./tech/agents.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
+
+    <!-- Notes / Articles -->
+    <section id="notes">
+        <h2 class="section-label">Notes</h2>
+        <div class="writing-grid">
+
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-1.html">The blood supply shouldn't depend on luck</a></h3>
+                <a href="./notes/note-1.html" class="writing-read">Read →</a>
             </article>
 
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Autonomous Tools</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    The rise of autonomous AI tools
-                </p>
-                <a href="./tech/autonomous.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Interoperability in digital health</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Why interoperability is the real bottleneck in digital health
-                </p>
-                <a href="./tech/interoperability.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Technologies that excite me most</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    A look at the innovations shaping the future
-                </p>
-                <a href="./tech/inno.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-4.html">The physical AI platform model</a></h3>
+                <a href="./notes/note-4.html" class="writing-read">Read →</a>
             </article>
 
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Dual-Use Tech</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Innovations that empower the world
-                </p>
-                <a href="./tech/dual.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Digital Twins</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Simulating the real world
-                </p>
-                <a href="./tech/twin.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Vibe Coding</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    The Rise of no-code engineering
-                </p>
-                <a href="./tech/vibe.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-3.html">Why most health tech fails at adoption, not technology</a></h3>
+                <a href="./notes/note-3.html" class="writing-read">Read →</a>
             </article>
 
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a>Monolith vs. Microservices</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Choosing the right architecture for your system
-                </p>
-                <a href="./tech/mono.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Read</a>
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-2.html">What AI agents actually change</a></h3>
+                <a href="./notes/note-2.html" class="writing-read">Read →</a>
             </article>
+
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-5.html">SaaS isn't dead. But the version you know might be.</a></h3>
+                <a href="./notes/note-5.html" class="writing-read">Read →</a>
+            </article>
+
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-6.html">Little bets as a way of working</a></h3>
+                <a href="./notes/note-6.html" class="writing-read">Read →</a>
+            </article>
+
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-7.html">5 things I changed my mind about last year</a></h3>
+                <a href="./notes/note-7.html" class="writing-read">Read →</a>
+            </article>
+
+            <article class="writing-card">
+                <h3 class="writing-title"><a href="./notes/note-8.html">On being curious across domains</a></h3>
+                <a href="./notes/note-8.html" class="writing-read">Read →</a>
+            </article>
+
         </div>
     </section>
-    <section aria-labelledby="biz-title" class="space-y-4 mt-20">
-        <div class="flex items-baseline justify-between">
-            <h2 id="biz-title" class="text-2xl md:text-2xl font-bold">Entrepreneurship</h2>
-        </div>
-        <p class="text-gray-600 max-w-xl">
-            A selection of books that shaped my thinking on entrepreneurship. 
-        </p>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.de/-/en/Blake-Masters-ebook/dp/B00KHX0II4/ref=sr_1_1?crid=1CSDXO4YLHNEO&dib=eyJ2IjoiMSJ9.ewT4UCdkr93q0DjeutcLql4DxyM6E0LxA3DXgc4ISjzSg1TSg2PjawcP1dxjE2lLj-kUlY0Xf1GUhFJdAdvyHAMEo4WLCkrAeAQxKjhFEltNdMTuu8M5WlybI1e8o3nyyecXMgHiUfKybIY8yUWmCpt42Cm_PRAclxtb5JHQy6irxeC8tdjcj3Sc3mU_xqzOXjHnEcR-QQc3zNuRvQwbIQf9Sno43DhHZdTczSOQbcY.Ry9-K2vKEfQrbEm7_WG7egPGzNEco2WSKk8OK_DtRUk&dib_tag=se&keywords=zero+to+one&qid=1763153007&sprefix=zero+to+o%2Caps%2C135&sr=8-1"
-                       class="group-hover:underline">Zero to One</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Peter Thiel <br>
-                    Notes on startups, or how to build the future
-                </p>
-                <a href="./business/zero.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <div class="flex items-center gap-2 text-xs text-gray-500">
+
+    <!-- Articles -->
+    <section id="articles">
+        <h2 class="section-label">Articles worth reading</h2>
+        <p class="writing-section-desc">Things I've read across the internet that stuck with me.</p>
+
+        <div class="book-list">
+
+            <a class="book-item" href="https://www.paulgraham.com/love.html" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Do What You Love</span>
+                    <span class="book-author">Paul Graham</span>
                 </div>
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.de/-/en/Blue-Ocean-Strategy-Expanded-Uncontested/dp/1625274491/ref=sr_1_1?crid=3BQ0SX6NYI40U&dib=eyJ2IjoiMSJ9.QMN11xewfuhoZDPNhns7LF38sJr1OVTtm4pyvKscAfjOIyIhv_FQpO0ER3PqI11PfkyfjnUQOfxLJkk2dEDawmRoJaZlSV3E5Y8QoxzdxpgGOQ9-fhaxxXPboM02XTsORS6-u8GFEIdUiDwSlE7q6ha3kQkdC24ieAmD105E8fu83ysMvQNHz7vGfhEkGdo0qPZd66_U-4YtGG4MYs66jFkgNh29ACvFWpbdCqqhBD4.S-7RXC0ok8slkRI3XXPy_R_Ua1xZzwDw5yF6VpqtzBY&dib_tag=se&keywords=blue+ocean+strategy&qid=1763153564&sprefix=blue+oce%2Caps%2C108&sr=8-1"
-                       class="group-hover:underline">Blue Ocean Strategy</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    W. Chan Kim, Renée Mauborgne <br>
-                    How to create uncontested market space and make the competition irrelevant
-                </p>
-                <a href="./business/blue.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612"
-                       class="group-hover:underline">Competing Against Luck</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Clayton M. Christensen <br>
-                    The story of innovation and customer choice
-                </p>
-                <a href="./business/luck.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <div class="flex items-center gap-2 text-xs text-gray-500">
-                </div>
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986"
-                       class="group-hover:underline">Crossing the Chasm</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Geoffrey A. Moore <br>
-                    Marketing and selling high-tech products to mainstream customers
-                </p>
-                <a href="./business/chasm.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank” href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
-                       class="group-hover:underline">The Hard Thing About Hard Things</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Ben Horowitz <br>
-                    Building a business when there are no easy answers
-                </p>
-                <a href="./business/hard.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="group border rounded-2xl p-5 hover:shadow-md transition">
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"
-                       class="group-hover:underline">The Lean Startup</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Eric Ries <br>
-                    How constant innovation creates radically successful businesses
-                </p>
-                <a href="./business/lean.html"
-                   class="mt-4 inline-block text-sm font-medium underline underline-offset-4">Notes</a>
-            </article>
-            <article class="relative group border rounded-2xl p-5 hover:shadow-md transition">
-                <span class="absolute top-4 left-4 bg-gray-200 text-gray-700 text-[10px] font-medium px-1.5 py-0.5 rounded">
-                 Reading 
-                 </span>
-                <br>
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank” href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572"
-                       class="group-hover:underline">The Personal MBA</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Josh Kaufman <br>
-                    Master the art of business
-                </p>
-            </article>
-            <article class="relative group border rounded-2xl p-5 hover:shadow-md transition">
-                <span class="absolute top-4 left-4 bg-gray-200 text-gray-700 text-[10px] font-medium px-1.5 py-0.5 rounded">
-                 Reading 
-                 </span>
-                <br>
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.com/Culture-Map-Breaking-Invisible-Boundaries/dp/1610392507"
-                       class="group-hover:underline">The Culture Map</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Erin Meyer<br>
-                    Breaking through the invisible boundaries of global business
-                </p>
-            </article>
-            <article class="relative group border rounded-2xl p-5 hover:shadow-md transition">
-                <span class="absolute top-4 left-4 bg-gray-200 text-gray-700 text-[10px] font-medium px-1.5 py-0.5 rounded">
-                 Reading 
-                 </span>
-                <br>
-                <h3 class="mt-2 font-semibold text-lg leading-snug">
-                    <a target=”_blank”
-                       href="https://www.amazon.com/Biodesign-Process-Innovating-Medical-Technologies/dp/0521517427"
-                       class="group-hover:underline">Stanford Biodesign</a>
-                </h3>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Zenios, Makower, Yock<br>
-                    The process of innovating medical technologies
-                </p>
-            </article>
-        </div>
-    </section>
-    <section id="podcasts" class="space-y-4 mt-20">
-        <div class="flex items-baseline justify-between">
-            <h3 class="text-2xl md:text-2xl font-bold">Podcasts Inspo</h3>
-        </div>
-        <p class="text-gray-600 max-w-xl">
-            A short selection of podcasts that always give me valuable insights.
-        </p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Lenny's Podcast</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Product, growth, and business strategy from top operators at leading tech companies </p>
-                <a href="https://open.spotify.com/show/2dR1MUZEHCOnz1LVfNac0j?si=87dd3b28e75e4951" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">How I Built This</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Interviews with entrepreneurs about how they built their companies, from early failures to
-                    breakthrough moments </p>
-                <a href="https://open.spotify.com/show/6E709HRH7XaiZrMfgtNCun?si=df740cc1df7a40c7" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Masters of Scale</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Reid Hoffman talks with founders and leaders about the strategies that helped them scale their
-                    companies
-                </p>
-                <a href="https://open.spotify.com/show/1bJRgaFZHuzifad4IAApFR?si=2e99f0d16ca64200" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">a16z Podcast</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    A look at how technology, startups, and markets evolve, with insights from industry experts and
-                    Andreessen Horowitz partners
-                </p>
-                <a href="https://open.spotify.com/show/5bC65RDvs3oxnLyqqvkUYX?si=d1be5732bdfb4047" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Y Combinator Startup Podcast</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Founders and YC partners share lessons on building, launching, and scaling startups
-                </p>
-                <a href="https://open.spotify.com/show/1tgqafxZAB0Bjd8nkwVtE4?si=8e2090b8214741e7" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Huberman Lab</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Science-backed tools for focus, habits, sleep, productivity, and wellbeing
-                </p>
-                <a href="https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0P?si=9e3b924725244323" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Raising Health</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Understanding biotech, health innovation, and where capital flows
-                </p>
-                <a href="https://open.spotify.com/show/4fjb8YTzHDuPBgDXc3ElkR?si=35022f4d29454645" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-            <article class="border rounded-2xl p-5 hover:shadow-md transition">
-                <h4 class="font-semibold text-lg">Pear Healthcare Playbook</h4>
-                <p class="mt-2 text-sm text-gray-600 line-clamp-3">
-                    Strategy and innovation in healthcare systems
-                </p>
-                <a href="https://open.spotify.com/show/2kKsYzKLmdEBejkqn8ruIl?si=889d8b63913c419b" target="_blank"
-                   class="mt-4 inline-block text-sm underline underline-offset-4 font-medium">
-                    Listen
-                </a>
-            </article>
-        </div>
-    </section>
-    <section id="recommendations" class="space-y-4 mt-20">
-        <h3 class="text-3xl md:text-2xl font-semibold leading-tight">Got a good book, podcast, or article?</h3>
+                <p class="book-desc">Why loving your work is not a luxury — and how most people end up doing something else without noticing.</p>
+            </a>
 
-        <p class="text-gray-600 max-w-xl">
-            I’d love to hear about it.
-        </p>
-        <a href="mailto:your@email.com?subject=Recommendation%20for%20You"
-           class="text-base inline-block px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-black">
-            Let's chat
-        </a>
+            <a class="book-item" href="https://pmarchive.com/guide_to_startups_part4.html" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">The Only Thing That Matters</span>
+                    <span class="book-author">Marc Andreessen</span>
+                </div>
+                <p class="book-desc">Product/market fit is the only thing that matters in the early stage of a startup. Everything else is noise.</p>
+            </a>
+
+            <a class="book-item" href="https://paulgraham.com/greatwork.html" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">How to Do Great Work</span>
+                    <span class="book-author">Paul Graham</span>
+                </div>
+                <p class="book-desc">A comprehensive map of what great work looks like, how to find it, and what gets in the way.</p>
+            </a>
+
+            <a class="book-item" href="https://patrickcollison.com/fast" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Fast</span>
+                    <span class="book-author">Patrick Collison</span>
+                </div>
+                <p class="book-desc">A collection of things that were built or achieved surprisingly fast — a quiet argument against assuming things have to take as long as they do.</p>
+            </a>
+
+            <a class="book-item" href="https://fs.blog/david-foster-wallace-this-is-water/" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">This Is Water</span>
+                    <span class="book-author">David Foster Wallace</span>
+                </div>
+                <p class="book-desc">On the real value of education — learning to choose what you pay attention to, and how you construct meaning from ordinary experience.</p>
+            </a>
+
+            <a class="book-item" href="https://ixdf.org/literature/article/dieter-rams-10-timeless-commandments-for-good-design" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">10 Commandments for Good Design</span>
+                    <span class="book-author">Dieter Rams</span>
+                </div>
+                <p class="book-desc">The principles that shaped modern design — still the clearest definition of what good design actually means.</p>
+            </a>
+
+            <a class="book-item" href="https://www.nfx.com/library" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">NFX Library</span>
+                    <span class="book-author">NFX</span>
+                </div>
+                <p class="book-desc">437+ essays, memos, and insights on network effects, startups, and venture — one of the best free resources for builders and investors.</p>
+            </a>
+
+            <a class="book-item" href="https://www.youtube.com/watch?v=CBYhVcO4WgI&list=PL11qn6zM2Y3bMZdChxEqHKaCaKUjwItGL" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">How to Start a Startup</span>
+                    <span class="book-author">Sam Altman</span>
+                </div>
+                <p class="book-desc">The Stanford lecture series on building a startup — ideas, product, team, execution. Dense and worth watching more than once.</p>
+            </a>
+
+        </div>
     </section>
+
+    <!-- Books -->
+    <section id="books">
+        <h2 class="section-label">Books</h2>
+        <p class="writing-section-desc">Books I've read across business, technology, psychology, and fiction, the ones worth keeping.</p>
+
+        <div class="book-list">
+
+            <a class="book-item" href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">The Personal MBA</span>
+                    <span class="book-author">Josh Kaufman</span>
+                </div>
+                <p class="book-desc">A dense map of how businesses actually work, without the business school.</p>
+            </a>
+
+            <a class="book-item" href="https://www.amazon.com/Culture-Map-Breaking-Invisible-Boundaries/dp/1610392507" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">The Culture Map</span>
+                    <span class="book-author">Erin Meyer</span>
+                </div>
+                <p class="book-desc">How cultural differences shape the way people communicate, decide, and lead.</p>
+            </a>
+
+            <a class="book-item" href="https://www.amazon.com/Biodesign-Process-Innovating-Medical-Technologies/dp/0521517427" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Stanford Biodesign</span>
+                    <span class="book-author">Zenios, Makower, Yock</span>
+                </div>
+                <p class="book-desc">The full process of innovating medical technologies, from need-finding to market.</p>
+            </a>
+
+            <a class="book-item" href="https://www.amazon.de/-/en/Blake-Masters-ebook/dp/B00KHX0II4/" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Zero to One</span>
+                    <span class="book-author">Peter Thiel</span>
+                </div>
+                <p class="book-desc">How to build something genuinely new instead of copying what already works.</p>
+            </a>
+
+            <a class="book-item" href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">The Hard Thing About Hard Things</span>
+                    <span class="book-author">Ben Horowitz</span>
+                </div>
+                <p class="book-desc">Building a business when there are no easy answers.</p>
+            </a>
+
+            <a class="book-item" href="https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180351" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">The Mom Test</span>
+                    <span class="book-author">Rob Fitzpatrick</span>
+                </div>
+                <p class="book-desc">How to talk to customers and find out if your idea is good — without them lying to you.</p>
+            </a>
+
+
+                <a class="book-item" href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Thinking, Fast and Slow</span>
+                        <span class="book-author">Daniel Kahneman</span>
+                    </div>
+                    <p class="book-desc">The two systems driving every decision — and why the fast one is wrong more than you think.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Business Model Generation</span>
+                        <span class="book-author">Alexander Osterwalder</span>
+                    </div>
+                    <p class="book-desc">A visual toolkit for designing, testing, and reinventing how a business creates value.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1119594820" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Venture Deals</span>
+                        <span class="book-author">Brad Feld &amp; Jason Mendelson</span>
+                    </div>
+                    <p class="book-desc">How VC deals actually work — term sheets, economics, and what founders usually miss.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Lean Startup</span>
+                        <span class="book-author">Eric Ries</span>
+                    </div>
+                    <p class="book-desc">How to build, measure, and learn your way to a product people actually want.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.de/-/en/Blue-Ocean-Strategy-Expanded-Uncontested/dp/1625274491/" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Blue Ocean Strategy</span>
+                        <span class="book-author">W. Chan Kim &amp; Renée Mauborgne</span>
+                    </div>
+                    <p class="book-desc">Why competing in crowded markets is a losing game — and how to create new space instead.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Competing Against Luck</span>
+                        <span class="book-author">Clayton M. Christensen</span>
+                    </div>
+                    <p class="book-desc">Jobs-to-be-done: customers don't buy products, they hire them to make progress.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Crossing-Chasm-3rd-Disruptive-Mainstream/dp/0062292986" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Crossing the Chasm</span>
+                        <span class="book-author">Geoffrey A. Moore</span>
+                    </div>
+                    <p class="book-desc">The gap between early adopters and the mainstream market — and how to cross it.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Antifragile-Things-That-Gain-Disorder/dp/0812979680" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Antifragile</span>
+                        <span class="book-author">Nassim Nicholas Taleb</span>
+                    </div>
+                    <p class="book-desc">Some things don't just survive shocks — they get stronger from them.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Black Swan</span>
+                        <span class="book-author">Nassim Nicholas Taleb</span>
+                    </div>
+                    <p class="book-desc">Why rare, unpredictable events dominate history — and why we keep ignoring them.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Skin-Game-Hidden-Asymmetries-Daily/dp/042528462X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Skin in the Game</span>
+                        <span class="book-author">Nassim Nicholas Taleb</span>
+                    </div>
+                    <p class="book-desc">Risk, accountability, and why people who bear no consequences shouldn't be making decisions.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Man's Search for Meaning</span>
+                        <span class="book-author">Viktor Frankl</span>
+                    </div>
+                    <p class="book-desc">Finding purpose as a survival mechanism — written from inside a concentration camp.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Infinite-Game-Simon-Sinek/dp/073521350X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Infinite Game</span>
+                        <span class="book-author">Simon Sinek</span>
+                    </div>
+                    <p class="book-desc">Business is not a game you win — it's one you keep playing, or drop out of.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Hooked</span>
+                        <span class="book-author">Nir Eyal</span>
+                    </div>
+                    <p class="book-desc">The four-step model behind products that create habits without relying on ads.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">So Good They Can't Ignore You</span>
+                        <span class="book-author">Cal Newport</span>
+                    </div>
+                    <p class="book-desc">Why "follow your passion" is bad advice — and what to do instead.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Will-Fly-Business-Idea-Waste/dp/0997082305" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Will It Fly?</span>
+                        <span class="book-author">Pat Flynn</span>
+                    </div>
+                    <p class="book-desc">How to validate a business idea before investing months of time building the wrong thing.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/SPIN-Selling-Neil-Rackham/dp/0070511136" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">SPIN Selling</span>
+                        <span class="book-author">Neil Rackham</span>
+                    </div>
+                    <p class="book-desc">The research-backed method for selling complex products by asking the right questions.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Charlie-Munger-Complete-Investor/dp/023117098X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Charlie Munger: The Complete Investor</span>
+                        <span class="book-author">Tren Griffin</span>
+                    </div>
+                    <p class="book-desc">Mental models and investing principles distilled from decades of Munger's thinking.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/0060833459" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Effective Executive</span>
+                        <span class="book-author">Peter Drucker</span>
+                    </div>
+                    <p class="book-desc">Effectiveness is a discipline that can be learned — and it matters more than intelligence.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">How to Win Friends &amp; Influence People</span>
+                        <span class="book-author">Dale Carnegie</span>
+                    </div>
+                    <p class="book-desc">Timeless principles for dealing with people that still hold up after 80 years.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Quick-Easy-Way-Effective-Speaking/dp/0671724002" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Quick &amp; Easy Way to Effective Speaking</span>
+                        <span class="book-author">Dale Carnegie</span>
+                    </div>
+                    <p class="book-desc">Practical techniques for speaking with clarity and confidence in any situation.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Eat-That-Frog-Great-Procrastinating/dp/162656941X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Eat That Frog!</span>
+                        <span class="book-author">Brian Tracy</span>
+                    </div>
+                    <p class="book-desc">Stop procrastinating by tackling your hardest task first — every single day.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144324" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Why We Sleep</span>
+                        <span class="book-author">Matthew Walker</span>
+                    </div>
+                    <p class="book-desc">Sleep is not rest — it's when your brain does its most important work.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Psycho-Cybernetics-Maxwell-Maltz/dp/0671700758" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Psycho-Cybernetics</span>
+                        <span class="book-author">Maxwell Maltz</span>
+                    </div>
+                    <p class="book-desc">How self-image shapes every decision you make — and how to deliberately reshape it.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Oscar-Lady-Pink-Eric-Emmanuel-Schmitt/dp/1592402836" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Oscar and the Lady in Pink</span>
+                        <span class="book-author">Éric-Emmanuel Schmitt</span>
+                    </div>
+                    <p class="book-desc">A dying child writes letters to God — small, devastating, and oddly hopeful.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Pride-Prejudice-Jane-Austen/dp/0141439513" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Pride and Prejudice</span>
+                        <span class="book-author">Jane Austen</span>
+                    </div>
+                    <p class="book-desc">Sharp, funny, and still one of the most accurate portraits of how judgment distorts perception.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Hobbit-J-R-R-Tolkien/dp/054792822X" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Hobbit</span>
+                        <span class="book-author">J.R.R. Tolkien</span>
+                    </div>
+                    <p class="book-desc">An unlikely person goes on an unexpected adventure — and turns out to be exactly right for it.</p>
+                </a>
+
+                <a class="book-item" href="https://www.amazon.com/Kill-Mockingbird-Harper-Lee/dp/0061743526" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">To Kill a Mockingbird</span>
+                        <span class="book-author">Harper Lee</span>
+                    </div>
+                    <p class="book-desc">Moral courage, told through a child's eyes in a town that has none.</p>
+                </a>
+
+
+        </div>
+    </section>
+
+    <!-- Podcasts -->
+    <section id="podcasts">
+        <h2 class="section-label">Podcasts</h2>
+        <p class="writing-section-desc">A selection that consistently gives me valuable perspectives.</p>
+
+        <div class="book-list">
+
+            <a class="book-item" href="https://open.spotify.com/show/2dR1MUZEHCOnz1LVfNac0j" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Lenny's Podcast</span>
+                </div>
+                <p class="book-desc">Product, growth, and business strategy from top operators at leading tech companies.</p>
+            </a>
+
+            <a class="book-item" href="https://open.spotify.com/show/6E709HRH7XaiZrMfgtNCun" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">How I Built This</span>
+                </div>
+                <p class="book-desc">Founders tell the real story of how they built their companies, from early failures to breakthroughs.</p>
+            </a>
+
+            <a class="book-item" href="https://open.spotify.com/show/1bJRgaFZHuzifad4IAApFR" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Masters of Scale</span>
+                </div>
+                <p class="book-desc">Reid Hoffman on the counterintuitive strategies behind some of the world's fastest-growing companies.</p>
+            </a>
+
+            <a class="book-item" href="https://open.spotify.com/show/5bC65RDvs3oxnLyqqvkUYX" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">a16z Podcast</span>
+                </div>
+                <p class="book-desc">How technology, startups, and markets evolve — with insights from Andreessen Horowitz partners.</p>
+            </a>
+
+            <a class="book-item" href="https://open.spotify.com/show/1tgqafxZAB0Bjd8nkwVtE4" target="_blank">
+                <div class="book-header">
+                    <span class="book-title">Y Combinator Startup Podcast</span>
+                </div>
+                <p class="book-desc">Founders and YC partners share lessons on building, launching, and scaling startups.</p>
+            </a>
+
+
+                <a class="book-item" href="https://open.spotify.com/show/4fjb8YTzHDuPBgDXc3ElkR" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Raising Health</span>
+                    </div>
+                    <p class="book-desc">Understanding biotech, health innovation, and where capital flows.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/2kKsYzKLmdEBejkqn8ruIl" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Pear Healthcare Playbook</span>
+                    </div>
+                    <p class="book-desc">Strategy and innovation in healthcare systems.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0P" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Huberman Lab</span>
+                    </div>
+                    <p class="book-desc">Science-backed tools for focus, habits, sleep, productivity, and wellbeing.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/2DRTstn9NMfBTMgKjxXLlz" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Founders</span>
+                        <span class="book-author">David Senra</span>
+                    </div>
+                    <p class="book-desc">Deep dives into the obsessions, failures, and ideas of history's greatest founders — through their own words.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/22fi0RqfoBACCuQDv97wFO" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Invest Like the Best</span>
+                        <span class="book-author">Patrick O'Shaughnessy</span>
+                    </div>
+                    <p class="book-desc">Conversations with investors and operators on how they think about capital, business, and long-term compounding.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/1VyK52NSZHZqJoenLrspH0" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Knowledge Project</span>
+                        <span class="book-author">Shane Parrish</span>
+                    </div>
+                    <p class="book-desc">Mental models, decision-making, and how the best thinkers actually think.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/7eFSQlHWNAifI3HJPYP7eU" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Conversations with Tyler</span>
+                        <span class="book-author">Tyler Cowen</span>
+                    </div>
+                    <p class="book-desc">Wide-ranging conversations that go places most interviewers don't dare — economics, culture, ideas, everything.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/4ex8hmrHCPvPohKJb3wsuC" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Indie Hackers</span>
+                    </div>
+                    <p class="book-desc">Founders building profitable products outside the VC track — how they started, what works, and what doesn't.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/3UkVSiVkJgJYMCJJyEgHCE" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">Startups for the Rest of Us</span>
+                        <span class="book-author">Rob Walling</span>
+                    </div>
+                    <p class="book-desc">Practical advice for bootstrapped founders — growth, pricing, hiring, and staying sane.</p>
+                </a>
+
+                <a class="book-item" href="https://open.spotify.com/show/7s2skCOsONtNDFNPNNJFrI" target="_blank">
+                    <div class="book-header">
+                        <span class="book-title">The Twenty Minute VC</span>
+                        <span class="book-author">Harry Stebbings</span>
+                    </div>
+                    <p class="book-desc">Fast-format interviews with top VCs and founders on deals, markets, and what they look for.</p>
+                </a>
+
+        </div>
+    </section>
+
+    <!-- Recommendation CTA -->
+    <section id="recommend">
+        <h2 class="section-label">Got a recommendation?</h2>
+        <p class="about-prose" style="margin-top: 0.5rem;">
+            Always looking for good books, podcasts, or articles.
+            <a href="mailto:paula@medx.ro?subject=Recommendation" class="text-link">Send it my way →</a>
+        </p>
+    </section>
+
 </main>
-<footer class="text-center text-xs text-gray-500 py-8">
+
+<footer class="site-footer">
     © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
 <script>
@@ -360,7 +561,7 @@
 <script src="../js/script.js"></script>
 <script>
     fetch("header.html")
-        .then(response => response.text())
+        .then(r => r.text())
         .then(html => {
             document.getElementById("header-placeholder").innerHTML = html;
         });

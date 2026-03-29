@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
 <div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 max-w-3xl mx-auto">
-    <section class="max-w-3xl mx-auto py-12">
-        <header class="mb-10">
-            <h1 class="text-3xl font-bold leading-tight">The Lean Startup</h1>
-            <p class="text-lg text-gray-600 mt-1">by Eric Ries</p>
-            <div class="mt-6 flex justify-center">
-                <img
-                        src="/assets/img/lean_b.jpg"
-                        alt="Book cover"
-                        class="w-48 h-auto rounded-xl shadow-lg"
-                />
-            </div>
-        </header>
-        <article class="mb-12">
+<main class="site-main">
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+    
+        <section class="article-intro"><p class="section-label">Notes</p>
+            <h1 class="hero-name">The Lean Startup</h1>
+            <p>by Eric Ries</p>
+        <img src="/assets/img/lean_b.jpg" alt="Book cover" />
+        </section>
+        <article class="article-body">
             <br>
-            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Brief highlights</h2>
+            <p>
                 When you’re building a new product or company, it’s easy to feel like you’re guessing your way through
                 the dark. You have ideas, plans, excitement, but what you don’t have is certainty. The Lean Startup by
                 Eric Ries speaks directly to that feeling. Instead of pretending founders know everything upfront, the
@@ -38,7 +32,7 @@
                 you’ve spent months building something they never asked for.
             </p>
             <br>
-            <p class="text-gray-700 leading-relaxed">
+            <p>
                 The book is all about reducing risk, speeding up learning, and avoiding the biggest startup trap,
                 creating something nobody wants.<br>
 
@@ -56,8 +50,8 @@
                 guessing what people might like, you learn what they actually do.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Minimum Viable Product</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Minimum Viable Product</h2>
+            <p>
                 One of the most famous ideas from the book is the MVP.
 
                 An MVP is not the perfect version of your idea. It’s the smallest, simplest version that lets you learn
@@ -77,8 +71,8 @@
                 find out what matters before you spend months (or years) building the wrong thing.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Validated learning</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Validated learning</h2>
+            <p>
                 Another big concept is validated learning. It means you don’t rely on opinions, assumptions, or “gut
                 feelings.” You learn from real data collected from real customers.
 
@@ -96,8 +90,8 @@
                 working and what isn’t.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Pivot</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Pivot</h2>
+            <p>
                 Every startup reaches a point where it must make a crucial decision:
 
                 keep going with the original idea (persevere), or
@@ -126,39 +120,36 @@
             </p>
             <br>
         </article>
-        <section>
-            <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        
+            <h2>Saved quotes</h2>
             <br>
-            <ul class="space-y-3">
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "The only way to win is to learn faster than anyone else."
+            <div class="article-quotes">
+                <li class="article-quote">
+                    "The only way to win is to learn faster than anyone else."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Success is not delivering a feature; success is learning how to solve the customer’s problem."
+                <li class="article-quote">
+                    "Success is not delivering a feature; success is learning how to solve the customer’s problem."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Innovation is a bottoms-up, decentralized, and unpredictable thing, but that doesn’t mean it
+                <li class="article-quote">
+                    "Innovation is a bottoms-up, decentralized, and unpredictable thing, but that doesn’t mean it
                     cannot be managed."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Build-Measure-Learn feedback loop is at the core of the Lean Startup model."
+                <li class="article-quote">
+                    "Build-Measure-Learn feedback loop is at the core of the Lean Startup model."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "The solution? First, remember that “Metrics are people, too.” We need to be able to test the data
+                <li class="article-quote">
+                    "The solution? First, remember that “Metrics are people, too.” We need to be able to test the data
                     by hand, in the messy real world, by talking to customers."
                 </li>
-            </ul>
-        </section>
-    </section>
-    <button class="back-btn" onclick="history.back()">Back</button>
-</main>
-<footer class="text-center text-xs text-gray-500 py-8">
+            </div>
+    </main>
+<footer class="site-footer">
     © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script src="/js/script.js"></script>
+<script src="../../js/script.js"></script>
 </body>
 <script>
     fetch("/pages/header.html")

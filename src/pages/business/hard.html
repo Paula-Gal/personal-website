@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paula Gal</title>
-    <link rel="icon" type="image/png" href="/assets/img/pg-logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="../../assets/img/pg-logo.png">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
 <div class="cursor-light"></div>
 <div id="header-placeholder"></div>
-<main class="p-6 max-w-3xl mx-auto">
-    <section class="max-w-3xl mx-auto py-12">
-        <header class="mb-10">
-            <h1 class="text-3xl font-bold leading-tight">The Hard Thing About Hard Things</h1>
-            <p class="text-lg text-gray-600 mt-1">by Ben Horowitz</p>
-            <div class="mt-6 flex justify-center">
-                <img
-                        src="/assets/img/hard_b.webp"
-                        alt="Book cover"
-                        class="w-48 h-auto rounded-xl shadow-lg"
-                />
-            </div>
-        </header>
-        <article class="mb-12">
+<main class="site-main">
+    <a class="article-back" href="javascript:history.back()">← Back</a>
+    
+        <section class="article-intro"><p class="section-label">Notes</p>
+            <h1 class="hero-name">The Hard Thing About Hard Things</h1>
+            <p>by Ben Horowitz</p>
+        <img src="/assets/img/hard_b.webp" alt="Book cover" />
+        </section>
+        <article class="article-body">
             <br>
-            <h2 class="text-xl font-bold mb-3 underline">Brief highlights</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Brief highlights</h2>
+            <p>
                 Most business books focus on how to succeed. The Hard Thing About Hard Things is different. Ben Horowitz
                 doesn’t sugarcoat anything. He doesn’t pretend building a company is glamorous or easy. Instead, he
                 talks honestly about the fear, stress, doubts, and impossible decisions that leaders face when
@@ -36,7 +30,7 @@
                 It’s a book filled with real stories, real pain, and real lessons, not theories.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">The struggle is real</h2>
+            <h2>The struggle is real</h2>
             <p>
                 One of the strongest parts of the book is when Horowitz describes “The Struggle.”<br>
 
@@ -56,7 +50,7 @@
                 struggle. The ones who survive learn how to push through it even when nothing makes sense.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Continue when you don’t have all the answers</h2>
+            <h2>Continue when you don’t have all the answers</h2>
             <p>
                 A big theme in the book is leadership under extreme pressure. Horowitz argues that CEOs often don’t know
                 the right answer, but they still have to make a decision.
@@ -74,8 +68,8 @@
                 lot of time in wartime.
             </p>
             <br>
-            <h2 class="text-xl font-semibold mb-3">Resilience</h2>
-            <p class="text-gray-700 leading-relaxed">
+            <h2>Resilience</h2>
+            <p>
                 Horowitz explains that building a strong company and managing your own mind are deeply connected. A
                 company that can take a punch starts with a leader who can take a punch. You can hire great people, set
                 clear expectations, build trust, and create a culture that’s honest and resilient, but none of it works
@@ -86,45 +80,42 @@
                 uncertainty becomes the tone everyone else follows.
             </p>
         </article>
-        <h2 class="text-xl font-semibold mb-3">Saved quotes</h2>
+        <h2>Saved quotes</h2>
         <br>
-        <section>
-            <ul class="space-y-3">
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Embrace the struggle."
+        
+            <div class="article-quotes">
+                <li class="article-quote">
+                    "Embrace the struggle."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "Marc: “Do you know the best thing about startups?” Ben: “What?” Marc: “You only ever experience
+                <li class="article-quote">
+                    "Marc: “Do you know the best thing about startups?” Ben: “What?” Marc: “You only ever experience
                     two emotions: euphoria and terror. And I find that lack of sleep enhances them both."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "People always ask me, “What’s the secret to being a successful CEO?” Sadly, there is no secret,
+                <li class="article-quote">
+                    "People always ask me, “What’s the secret to being a successful CEO?” Sadly, there is no secret,
                     but if there is one skill that stands out, it’s the ability to focus and make the best move when
                     there are no good moves."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "We take care of the people, the products, and the profits, in that order."
+                <li class="article-quote">
+                    "We take care of the people, the products, and the profits, in that order."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "The struggle is when people ask you why you don’t quit and you don’t know the answer."
+                <li class="article-quote">
+                    "The struggle is when people ask you why you don’t quit and you don’t know the answer."
                 </li>
-                <li class="text-xxl p-3 bg-gray-50 border rounded-lg">
-                    📌 "The first problem is that everybody learns to be a CEO by being a CEO. No training as a manager,
+                <li class="article-quote">
+                    "The first problem is that everybody learns to be a CEO by being a CEO. No training as a manager,
                     general manager, or in any other job actually prepares you to run a company. The only thing that
                     prepares you to run a company is running a company."
                 </li>
-            </ul>
-        </section>
-    </section>
-    <button class="back-btn" onclick="history.back()">Back</button>
-</main>
-<footer class="text-center text-xs text-gray-500 py-8">
+            </div>
+    </main>
+<footer class="site-footer">
     © <span id="year"></span> Paula. <i>Keep building.</i>
 </footer>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script src="/js/script.js"></script>
+<script src="../../js/script.js"></script>
 </body>
 <script>
     fetch("/pages/header.html")
